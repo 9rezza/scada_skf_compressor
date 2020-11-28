@@ -531,7 +531,7 @@
                   </div>
                   <div class="text-right content-core">
                     <div class="nilai">
-                      <p id="pp2_aagv">40</p>
+                      <p id="pp2_aavg">40</p>
                       <p id="pp2_vrn">20200.00</p>
                       <p id="pp2_vsn">1.00</p>
                       <p id="pp2_vtn">708.55</p>
@@ -621,7 +621,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_comp1_aagv">40</p>
+                      <p id="pp2_comp1_aavg">40</p>
                       <p id="pp2_comp1_vrn">20200.00</p>
                       <p id="pp2_comp1_vsn">1.00</p>
                       <p id="pp2_comp1_vtn">708.55</p>
@@ -657,7 +657,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_comp2_aagv">40</p>
+                      <p id="pp2_comp2_aavg">40</p>
                       <p id="pp2_comp2_vrn">20200.00</p>
                       <p id="pp2_comp2_vsn">1.00</p>
                       <p id="pp2_comp2_vtn">708.55</p>
@@ -693,7 +693,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_comp3_aagv">40</p>
+                      <p id="pp2_comp3_aavg">40</p>
                       <p id="pp2_comp3_vrn">20200.00</p>
                       <p id="pp2_comp3_vsn">1.00</p>
                       <p id="pp2_comp3_vtn">708.55</p>
@@ -729,7 +729,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_comp4_aagv">40</p>
+                      <p id="pp2_comp4_aavg">40</p>
                       <p id="pp2_comp4_vrn">20200.00</p>
                       <p id="pp2_comp4_vsn">1.00</p>
                       <p id="pp2_comp4_vtn">708.55</p>
@@ -765,7 +765,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_ct_aagv">40</p>
+                      <p id="pp2_ct_aavg">40</p>
                       <p id="pp2_ct_vrn">20200.00</p>
                       <p id="pp2_ct_vsn">1.00</p>
                       <p id="pp2_ct_vtn">708.55</p>
@@ -801,7 +801,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_cap_1_aagv">40</p>
+                      <p id="pp2_cap_1_aavg">40</p>
                       <p id="pp2_cap_1_vrn">20200.00</p>
                       <p id="pp2_cap_1_vsn">1.00</p>
                       <p id="pp2_cap_1_vtn">708.55</p>
@@ -916,7 +916,7 @@
                   </div>
                   <div class="text-right content-core">
                     <div class="nilai">
-                      <p id="pp1_aagv">40</p>
+                      <p id="pp1_aavg">40</p>
                       <p id="pp1_vrn">20200.00</p>
                       <p id="pp1_vsn">1.00</p>
                       <p id="pp1_vtn">708.55</p>
@@ -989,7 +989,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_comp5_aagv">40</p>
+                      <p id="pp1_comp5_aavg">40</p>
                       <p id="pp1_comp5_vrn">20200.00</p>
                       <p id="pp1_comp5_vsn">1.00</p>
                       <p id="pp1_comp5_vtn">708.55</p>
@@ -1025,7 +1025,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_comp6_aagv">40</p>
+                      <p id="pp1_comp6_aavg">40</p>
                       <p id="pp1_comp6_vrn">20200.00</p>
                       <p id="pp1_comp6_vsn">1.00</p>
                       <p id="pp1_comp6_vtn">708.55</p>
@@ -1061,7 +1061,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_comp7_aagv">40</p>
+                      <p id="pp1_comp7_aavg">40</p>
                       <p id="pp1_comp7_vrn">20200.00</p>
                       <p id="pp1_comp7_vsn">1.00</p>
                       <p id="pp1_comp7_vtn">708.55</p>
@@ -1097,7 +1097,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_comp8_aagv">40</p>
+                      <p id="pp1_comp8_aavg">40</p>
                       <p id="pp1_comp8_vrn">20200.00</p>
                       <p id="pp1_comp8_vsn">1.00</p>
                       <p id="pp1_comp8_vtn">708.55</p>
@@ -1133,7 +1133,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_cap_2_aagv">40</p>
+                      <p id="pp1_cap_2_aavg">40</p>
                       <p id="pp1_cap_2_vrn">20200.00</p>
                       <p id="pp1_cap_2_vsn">1.00</p>
                       <p id="pp1_cap_2_vtn">708.55</p>
@@ -1254,7 +1254,7 @@
                   </div>
                   <div class="text-right content-core">
                     <div class="nilai">
-                      <p id="sdp_aagv">40</p>
+                      <p id="sdp_aavg">40</p>
                       <p id="sdp_vrn">20200.00</p>
                       <p id="sdp_vsn">1.00</p>
                       <p id="sdp_vtn">708.55</p>
@@ -1295,7 +1295,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="sdp-comp1-aagv">40</p>
+                      <p id="sdp-comp1-aavg">40</p>
                       <p id="sdp-comp1-vrn">20200.00</p>
                       <p id="sdp-comp1-vsn">1.00</p>
                       <p id="sdp-comp1-vtn">708.55</p>
@@ -1329,7 +1329,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="sdp-comp2-aagv">40</p>
+                      <p id="sdp-comp2-aavg">40</p>
                       <p id="sdp-comp2-vrn">20200.00</p>
                       <p id="sdp-comp2-vsn">1.00</p>
                       <p id="sdp-comp2-vtn">708.55</p>
@@ -1363,7 +1363,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="sdp-comp3-aagv">40</p>
+                      <p id="sdp-comp3-aavg">40</p>
                       <p id="sdp-comp3-vrn">20200.00</p>
                       <p id="sdp-comp3-vsn">1.00</p>
                       <p id="sdp-comp3-vtn">708.55</p>
@@ -1399,7 +1399,7 @@
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="sdp-comp4-aagv">40</p>
+                      <p id="sdp-comp4-aavg">40</p>
                       <p id="sdp-comp4-vrn">20200.00</p>
                       <p id="sdp-comp4-vsn">1.00</p>
                       <p id="sdp-comp4-vtn">708.55</p>
@@ -1490,8 +1490,8 @@
         var indicatorParam = []
         var payload = $.parseJSON(event.data)
         // console.log(payload)
-        // console.log('#' + payload.modul + '_' + 'aagv')
-        $('#' + payload.modul + '_' + 'aagv').html(payload.aagv)
+        // console.log('#' + payload.modul + '_' + 'aavg')
+        $('#' + payload.modul + '_' + 'aavg').html(payload.aavg)
         $('#' + payload.modul + '_' + 'vrn').html(payload.vrn)
         $('#' + payload.modul + '_' + 'vsn').html(payload.vsn)
         $('#' + payload.modul + '_' + 'vtn').html(payload.vtn)
