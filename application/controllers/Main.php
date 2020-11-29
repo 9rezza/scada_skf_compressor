@@ -76,8 +76,8 @@ class Main extends CI_Controller
 		} else if ($modul = 'cap1') {
 		} else if ($modul = 'cap2') {
 		} else {
-		}
 			$file = $this->export_data_pm('Record', $data);
+		}
 			// print_r($file);
 	}
 
