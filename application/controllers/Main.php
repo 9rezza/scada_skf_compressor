@@ -72,9 +72,9 @@ class Main extends CI_Controller
 		$modul = $this->input->post('modul');
 		$data = $this->main_model->get_data($from, $to, $modul)->result();
 		if ($modul == 'temp') {
-		} else if ($modul = 'alarm') {
-		} else if ($modul = 'cap1') {
-		} else if ($modul = 'cap2') {
+		} else if ($modul == 'alarm') {
+		} else if ($modul == 'cap1') {
+		} else if ($modul == 'cap2') {
 		} else {
 			$file = $this->export_data_pm('Record', $data);
 		}
