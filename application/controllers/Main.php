@@ -1,11 +1,12 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 
-class Main extends CI_Controller {
-	
+class Main extends CI_Controller
+{
+
 	public function __construct()
 	{
 		parent::__construct();
@@ -13,9 +14,9 @@ class Main extends CI_Controller {
 		$this->load->database();
 		$this->load->model('main_model');
 		$this->load->library('template');
-        $this->load->library('session');
-        $this->load->library('datatables');
-        //$this->is_login();
+		$this->load->library('session');
+		$this->load->library('datatables');
+		//$this->is_login();
 	}
 
 	// public function nav($value)
@@ -47,11 +48,11 @@ class Main extends CI_Controller {
 		$data['symbol'] = $this->main_model->get_symbol()->result();
 		$data['textbox'] = $this->main_model->get_textbox()->result();
 		$data['position'] = [];
-		foreach ($data['images'] as $s){
-			array_push($data['position'], '#'.$s->element.'{left:'.$s->x.'px; top:'.$s->y.'px; z-index:'.$s->z.';}');
+		foreach ($data['images'] as $s) {
+			array_push($data['position'], '#' . $s->element . '{left:' . $s->x . 'px; top:' . $s->y . 'px; z-index:' . $s->z . ';}');
 		}
-		foreach ($data['textbox'] as $t){
-			array_push($data['position'], '#'.$t->element.'{left:'.$t->x.'px; top:'.$t->y.'px; z-index:'.$t->z.'; color:'.$t->color.';}');
+		foreach ($data['textbox'] as $t) {
+			array_push($data['position'], '#' . $t->element . '{left:' . $t->x . 'px; top:' . $t->y . 'px; z-index:' . $t->z . '; color:' . $t->color . ';}');
 		}
 		$this->template->display('content/scada', $data);
 	}
@@ -68,37 +69,43 @@ class Main extends CI_Controller {
 	{
 		$from = $this->input->post('from');
 		$to = $this->input->post('to');
-		$clause = $this->input->post('modul');
-		$data = $this->main_model->export_data($from, $to, $clause)->result();
-		$file = $this->export_data_pm('Record', $data);
-		// print_r($file);
+		$modul = $this->input->post('modul');
+		$data = $this->main_model->get_data($from, $to, $modul)->result();
+		if ($modul == 'temp') {
+		} else if ($modul = 'alarm') {
+		} else if ($modul = 'cap1') {
+		} else if ($modul = 'cap2') {
+		} else {
+		}
+			$file = $this->export_data_pm('Record', $data);
+			// print_r($file);
 	}
 
-    public function export_data_pm($name, $data)
-    {
-        $spreadsheet = new Spreadsheet();
-        $sheet = $spreadsheet->getActiveSheet();
-        $sheet->setCellValue('A1', 'TIMESTAMP');
-        $sheet->setCellValue('B1', 'kWh');
-        $sheet->setCellValue('C1', 'kW');
-        $sheet->setCellValue('D1', 'kvar');
-        $sheet->setCellValue('E1', 'THDi');
-        $sheet->setCellValue('F1', 'THDv');
-		
+	public function export_data_pm($name, $data)
+	{
+		$spreadsheet = new Spreadsheet();
+		$sheet = $spreadsheet->getActiveSheet();
+		$sheet->setCellValue('A1', 'TIMESTAMP');
+		$sheet->setCellValue('B1', 'kWh');
+		$sheet->setCellValue('C1', 'kW');
+		$sheet->setCellValue('D1', 'kvar');
+		$sheet->setCellValue('E1', 'THDi');
+		$sheet->setCellValue('F1', 'THDv');
+
 		$i = 2;
-		foreach($data as $dt){
-			$sheet->setCellValue('A'.$i, $dt->datetime);
-			$sheet->setCellValue('B'.$i, $dt->kwh);
-			$sheet->setCellValue('C'.$i, $dt->kw);
-			$sheet->setCellValue('D'.$i, $dt->kvar);
-			$sheet->setCellValue('E'.$i, $dt->thdi);
-			$sheet->setCellValue('F'.$i, $dt->thdv);
+		foreach ($data as $dt) {
+			$sheet->setCellValue('A' . $i, $dt->datetime);
+			$sheet->setCellValue('B' . $i, $dt->kwh);
+			$sheet->setCellValue('C' . $i, $dt->kw);
+			$sheet->setCellValue('D' . $i, $dt->kvar);
+			$sheet->setCellValue('E' . $i, $dt->thdi);
+			$sheet->setCellValue('F' . $i, $dt->thdv);
 			$i++;
-		} 
-		
+		}
+
 		$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, "Xlsx");
 		header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-		header('Content-Disposition: attachment; filename="'.$name.'.xlsx"');		
+		header('Content-Disposition: attachment; filename="' . $name . '.xlsx"');
 		// ob_start();
 		// $writer->save("php://output");
 		// $xlsData = ob_get_contents();
@@ -110,7 +117,7 @@ class Main extends CI_Controller {
 		// );
 		// return $response;
 		return $writer->save("php://output");
-    }
+	}
 
 
 
@@ -140,9 +147,9 @@ class Main extends CI_Controller {
 			'grup' => $input['grup'],
 			'color' => $input['color'],
 			'src' => $input['src'],
-			'element' => $input['grup'].'_'.$grup,
-			'x' => 0,//$input['x'], 
-			'y' => 0,//$input['y'], 
+			'element' => $input['grup'] . '_' . $grup,
+			'x' => 0, //$input['x'], 
+			'y' => 0, //$input['y'], 
 		];
 		$this->main_model->insert_image($data);
 		$feed = $this->main_model->get_image_last()->row();
@@ -154,8 +161,8 @@ class Main extends CI_Controller {
 		$input = $this->input->post();
 		$id = $input['id'];
 		$data = [
-			'x' => $input['x'], 
-			'y' => $input['y'], 
+			'x' => $input['x'],
+			'y' => $input['y'],
 		];
 		$this->main_model->update_image($id, $data);
 		echo json_encode($input);
@@ -185,8 +192,8 @@ class Main extends CI_Controller {
 		$input = $this->input->post();
 		$element = $input['element'];
 		$data = [
-			'x' => $input['x'], 
-			'y' => $input['y'], 
+			'x' => $input['x'],
+			'y' => $input['y'],
 		];
 		$this->main_model->update_textbox_by_element($element, $data);
 		echo json_encode($input);
@@ -202,17 +209,17 @@ class Main extends CI_Controller {
 		$data['data2'] = [];
 		$data['data3'] = [];
 		$data['data4'] = [];
-		for($i = date('Y-m-d H:i:s	', strtotime('-179 second')); $i < date('Y-m-d H:i:s', strtotime('+1 second')); $i = date('Y-m-d H:i:s', strtotime('+1 second', strtotime($i)))){
-			array_push($data['data'], array(strtotime($i)*1000, rand(1200,1500)/100));
+		for ($i = date('Y-m-d H:i:s	', strtotime('-179 second')); $i < date('Y-m-d H:i:s', strtotime('+1 second')); $i = date('Y-m-d H:i:s', strtotime('+1 second', strtotime($i)))) {
+			array_push($data['data'], array(strtotime($i) * 1000, rand(1200, 1500) / 100));
 		}
-		for($i = date('Y-m-d H:i:s	', strtotime('-179 second')); $i < date('Y-m-d H:i:s', strtotime('+1 second')); $i = date('Y-m-d H:i:s', strtotime('+1 second', strtotime($i)))){
-			array_push($data['data2'], array(strtotime($i)*1000, rand(2000,3000)/100));
+		for ($i = date('Y-m-d H:i:s	', strtotime('-179 second')); $i < date('Y-m-d H:i:s', strtotime('+1 second')); $i = date('Y-m-d H:i:s', strtotime('+1 second', strtotime($i)))) {
+			array_push($data['data2'], array(strtotime($i) * 1000, rand(2000, 3000) / 100));
 		}
-		for($i = date('Y-m-d H:i:s	', strtotime('-179 second')); $i < date('Y-m-d H:i:s', strtotime('+1 second')); $i = date('Y-m-d H:i:s', strtotime('+1 second', strtotime($i)))){
-			array_push($data['data3'], array(strtotime($i)*1000, rand(10000,15000)/100));
+		for ($i = date('Y-m-d H:i:s	', strtotime('-179 second')); $i < date('Y-m-d H:i:s', strtotime('+1 second')); $i = date('Y-m-d H:i:s', strtotime('+1 second', strtotime($i)))) {
+			array_push($data['data3'], array(strtotime($i) * 1000, rand(10000, 15000) / 100));
 		}
-		for($i = date('Y-m-d H:i:s	', strtotime('-179 second')); $i < date('Y-m-d H:i:s', strtotime('+1 second')); $i = date('Y-m-d H:i:s', strtotime('+1 second', strtotime($i)))){
-			array_push($data['data4'], array(strtotime($i)*1000, rand(100000,110000)/100));
+		for ($i = date('Y-m-d H:i:s	', strtotime('-179 second')); $i < date('Y-m-d H:i:s', strtotime('+1 second')); $i = date('Y-m-d H:i:s', strtotime('+1 second', strtotime($i)))) {
+			array_push($data['data4'], array(strtotime($i) * 1000, rand(100000, 110000) / 100));
 		}
 		// print_r(json_encode($data['data']));
 		$this->template->display('content/chart', $data);
@@ -227,8 +234,8 @@ class Main extends CI_Controller {
 		$data['symbol'] = $this->main_model->get_symbol()->result();
 		$data['production'] = $this->main_model->get_production()->row();
 		$data['position'] = [];
-		foreach ($data['images'] as $s){
-			array_push($data['position'], '#'.$s->element.'{left:'.$s->x.'px; top:'.$s->y.'px; z-index:'.$s->z.';}');
+		foreach ($data['images'] as $s) {
+			array_push($data['position'], '#' . $s->element . '{left:' . $s->x . 'px; top:' . $s->y . 'px; z-index:' . $s->z . ';}');
 		}
 		$this->template->display('content/production', $data);
 	}
@@ -244,10 +251,10 @@ class Main extends CI_Controller {
 	public function production_trigger($API_KEY)
 	{
 		$proses = $this->main_model->production_status_check()->row();
-		
-		if(strtolower($API_KEY) == 'rezzaisthebest'){
-			if($proses->line_stop == 0){
-				if($proses->status > 1){
+
+		if (strtolower($API_KEY) == 'rezzaisthebest') {
+			if ($proses->line_stop == 0) {
+				if ($proses->status > 1) {
 					$data['status'] = '3';
 					$this->main_model->production_status_change($data);
 					echo 'ERROR';
@@ -256,7 +263,7 @@ class Main extends CI_Controller {
 					$this->main_model->production_status_change($data);
 					echo 'SUCCESS';
 				}
-			} else {				
+			} else {
 				echo 'ERROR';
 			}
 		} else {
@@ -270,8 +277,8 @@ class Main extends CI_Controller {
 	{
 		$proses = $this->main_model->production_status_check()->row();
 
-		if(strtolower($API_KEY) == 'rezzaisthebest'){
-			if($proses->status == 2){
+		if (strtolower($API_KEY) == 'rezzaisthebest') {
+			if ($proses->status == 2) {
 				$data['status'] = '0';
 				$this->main_model->production_status_change($data);
 				echo 'ERROR';
@@ -298,7 +305,7 @@ class Main extends CI_Controller {
 	{
 		$time_now = date('Y-m-d H:i:00');
 		$production = $this->main_model->get_production()->row();
-		if($time_now == $production->timestamp){
+		if ($time_now == $production->timestamp) {
 			$data['total'] = $production->total + 1;
 			$data['count_speed'] = $production->count_speed + 1;
 		} else {
@@ -321,8 +328,8 @@ class Main extends CI_Controller {
 		$input = $this->input->post();
 		$id = $input['id'];
 		$data = [
-			'x' => $input['x'], 
-			'y' => $input['y'], 
+			'x' => $input['x'],
+			'y' => $input['y'],
 		];
 		$this->main_model->update_production_image($id, $data);
 		echo json_encode($input);
@@ -347,7 +354,7 @@ class Main extends CI_Controller {
 
 
 
-	
+
 
 	public function production_line_stop_check()
 	{
@@ -362,17 +369,17 @@ class Main extends CI_Controller {
 		$proses = $this->main_model->production_line_stop_check()->row();
 
 		// if(strtolower($API_KEY) == 'rezzaisthebest'){
-			if($proses->line_stop == 0){
-				$data['line_stop'] = '1';
-				$this->main_model->production_line_stop_change($data);
-				echo 'SUCCESS';
-			} else if($proses->line_stop == 2){
-				$data['line_stop'] = '3';
-				$this->main_model->production_line_stop_change($data);
-				echo 'SUCCESS';
-			} else {
-				echo 'ERROR';				
-			}
+		if ($proses->line_stop == 0) {
+			$data['line_stop'] = '1';
+			$this->main_model->production_line_stop_change($data);
+			echo 'SUCCESS';
+		} else if ($proses->line_stop == 2) {
+			$data['line_stop'] = '3';
+			$this->main_model->production_line_stop_change($data);
+			echo 'SUCCESS';
+		} else {
+			echo 'ERROR';
+		}
 		// } else {
 		// 	// echo json_encode('error');
 		// }
@@ -429,8 +436,8 @@ class Main extends CI_Controller {
 		$data['symbol'] = $this->main_model->get_symbol()->result();
 		$data['monitoring'] = $this->main_model->get_monitoring()->row();
 		$data['position'] = [];
-		foreach ($data['images'] as $s){
-			array_push($data['position'], '#'.$s->element.'{left:'.$s->x.'px; top:'.$s->y.'px; z-index:'.$s->z.';}');
+		foreach ($data['images'] as $s) {
+			array_push($data['position'], '#' . $s->element . '{left:' . $s->x . 'px; top:' . $s->y . 'px; z-index:' . $s->z . ';}');
 		}
 		$this->template->display('content/monitoring', $data);
 	}
@@ -443,9 +450,9 @@ class Main extends CI_Controller {
 		// 	$data['total'] = $production->total + 1;
 		// 	$data['count_speed'] = $production->count_speed + 1;
 		// } else {
-			$data['timestamp'] = $time_now;
-			$data['actual'] = $monitoring->actual + 1;
-			$data['selisih'] = $data['actual'] - $monitoring->target;
+		$data['timestamp'] = $time_now;
+		$data['actual'] = $monitoring->actual + 1;
+		$data['selisih'] = $data['actual'] - $monitoring->target;
 		// }
 		$this->main_model->update_monitoring($data);
 		$feed = $this->main_model->get_monitoring()->row();
@@ -464,11 +471,11 @@ class Main extends CI_Controller {
 	}
 
 	/////////////////////////////////////////////////////
-	
+
 
 	public function benchmark_record_data($API_KEY)
 	{
-		if(strtolower($API_KEY) == 'rezzaisthebest'){
+		if (strtolower($API_KEY) == 'rezzaisthebest') {
 			$data['timestamp'] = date("Y-m-d H:i:00");
 			$this->main_model->add_benchmark_record($data);
 			echo 'SUCCESS';
@@ -493,7 +500,7 @@ class Main extends CI_Controller {
 
 
 
-	
+
 
 
 
@@ -528,7 +535,7 @@ class Main extends CI_Controller {
 		$data['url'] = base_url();
 		$data['circuit'] = base_url('assets/images/circuit/');
 		$data['arr'] = [];
-		for ($i=1; $i<=100; $i++){		
+		for ($i = 1; $i <= 100; $i++) {
 			array_push($data['arr'], $i);
 		}
 		$this->load->view('content/sample2', $data);
@@ -593,33 +600,33 @@ class Main extends CI_Controller {
 		// print_r($file);
 	}
 
-    public function download($name, $data)
-    {		
-        $spreadsheet = new Spreadsheet();
-        $sheet = $spreadsheet->getActiveSheet();
-        $sheet->setCellValue('A1', 'TIMESTAMP');
-        $sheet->setCellValue('B1', 'ARUS 1');
-        $sheet->setCellValue('C1', 'ARUS 2');
-        $sheet->setCellValue('D1', 'ARUS 3');
-        $sheet->setCellValue('E1', 'ARUS RATA-RATA');
-        $sheet->setCellValue('F1', 'POWER APPARENT');
-        $sheet->setCellValue('G1', 'POWER REAL ');
-		
+	public function download($name, $data)
+	{
+		$spreadsheet = new Spreadsheet();
+		$sheet = $spreadsheet->getActiveSheet();
+		$sheet->setCellValue('A1', 'TIMESTAMP');
+		$sheet->setCellValue('B1', 'ARUS 1');
+		$sheet->setCellValue('C1', 'ARUS 2');
+		$sheet->setCellValue('D1', 'ARUS 3');
+		$sheet->setCellValue('E1', 'ARUS RATA-RATA');
+		$sheet->setCellValue('F1', 'POWER APPARENT');
+		$sheet->setCellValue('G1', 'POWER REAL ');
+
 		$i = 2;
-		foreach($data as $dt){
-			$sheet->setCellValue('A'.$i, $dt->timestamp);
-			$sheet->setCellValue('B'.$i, $dt->cur_1);
-			$sheet->setCellValue('C'.$i, $dt->cur_2);
-			$sheet->setCellValue('D'.$i, $dt->cur_3);
-			$sheet->setCellValue('E'.$i, $dt->cur_avg);
-			$sheet->setCellValue('F'.$i, $dt->power_app);
-			$sheet->setCellValue('G'.$i, $dt->power_real);
+		foreach ($data as $dt) {
+			$sheet->setCellValue('A' . $i, $dt->timestamp);
+			$sheet->setCellValue('B' . $i, $dt->cur_1);
+			$sheet->setCellValue('C' . $i, $dt->cur_2);
+			$sheet->setCellValue('D' . $i, $dt->cur_3);
+			$sheet->setCellValue('E' . $i, $dt->cur_avg);
+			$sheet->setCellValue('F' . $i, $dt->power_app);
+			$sheet->setCellValue('G' . $i, $dt->power_real);
 			$i++;
-		} 
-		
+		}
+
 		$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, "Xlsx");
 		header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-		header('Content-Disposition: attachment; filename="'.$name.'.xlsx"');		
+		header('Content-Disposition: attachment; filename="' . $name . '.xlsx"');
 		// ob_start();
 		// $writer->save("php://output");
 		// $xlsData = ob_get_contents();
@@ -631,7 +638,7 @@ class Main extends CI_Controller {
 		// );
 		// return $response;
 		return $writer->save("php://output");
-    }
+	}
 
 	public function export_area()
 	{
@@ -639,15 +646,13 @@ class Main extends CI_Controller {
 		$data['url'] = base_url();
 		$area = $this->main_model->get_area()->result();
 		$data['area'] = $area;
-		foreach ($area as $a)
-		{
+		foreach ($area as $a) {
 			$data[$a->kode] = $this->main_model->get_pm_area($a->id)->result();
 			// $abc = $a->kode;
 			// print_r($$abc);
 		}
-			// print_r($area['kode']);
+		// print_r($area['kode']);
 
 		$this->template->display('content/area', $data);
 	}
-
 }

@@ -1,7 +1,17 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Main_model extends CI_Model {
+class Main_model extends CI_Model
+{
+
+	public function get_data($from, $to, $modul)
+	{
+		$this->db->select('*');
+		$this->db->from($modul);
+		$this->db->where('datetime >=', "'" . $from . ' 00:00:00' . "'", false);
+		$this->db->where('datetime <=', "'" . $to . ' 23:59:59' . "'", false);
+		return $this->db->get();
+	}
 
 	public function get_symbol()
 	{
@@ -74,7 +84,7 @@ class Main_model extends CI_Model {
 		$this->db->update('textbox');
 	}
 
-	
+
 
 	public function production_status_check()
 	{
@@ -126,7 +136,7 @@ class Main_model extends CI_Model {
 		$this->db->where('element', $element);
 		$this->db->set($data);
 		$this->db->update('production_images');
-	}	
+	}
 
 	public function production_line_stop_check()
 	{
@@ -146,7 +156,7 @@ class Main_model extends CI_Model {
 	public function production_line_stop_update($data)
 	{
 		$this->db->where('id', '1');
-		$this->db->set('line_stop', 'line_stop + '.$data["time"], false);
+		$this->db->set('line_stop', 'line_stop + ' . $data["time"], false);
 		$this->db->set('eff', '((600-line_stop)/600)*100', false);
 		$this->db->update('production');
 	}
@@ -196,7 +206,6 @@ class Main_model extends CI_Model {
 	{
 		$this->db->insert('benchmark', $data);
 	}
-	
 }
 
 /* End of file Tooling.php */

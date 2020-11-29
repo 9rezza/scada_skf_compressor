@@ -543,7 +543,7 @@
                       <p id="pp2_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -616,24 +616,24 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp2_comp1_title" data-id="1">
+                  <div class="text-center title-parameter" id="comp1_title" data-id="1">
                     Compressor 1
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_comp1_aavg">40</p>
-                      <p id="pp2_comp1_vrn">20200.00</p>
-                      <p id="pp2_comp1_vsn">1.00</p>
-                      <p id="pp2_comp1_vtn">708.55</p>
-                      <p id="pp2_comp1_pf">808.00</p>
-                      <p id="pp2_comp1_kw">0</p>
-                      <p id="pp2_comp1_kva">0</p>
-                      <p id="pp2_comp1_thdi">0</p>
-                      <p id="pp2_comp1_thdv">0</p>
-                      <p id="pp2_comp1_kwh">0</p>
+                      <p id="comp1_aavg">40</p>
+                      <p id="comp1_vrn">20200.00</p>
+                      <p id="comp1_vsn">1.00</p>
+                      <p id="comp1_vtn">708.55</p>
+                      <p id="comp1_pf">808.00</p>
+                      <p id="comp1_kw">0</p>
+                      <p id="comp1_kva">0</p>
+                      <p id="comp1_thdi">0</p>
+                      <p id="comp1_thdv">0</p>
+                      <p id="comp1_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -652,24 +652,24 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp2_comp2_title" data-id="2">
+                  <div class="text-center title-parameter" id="comp2_title" data-id="2">
                     Compressor 2
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_comp2_aavg">40</p>
-                      <p id="pp2_comp2_vrn">20200.00</p>
-                      <p id="pp2_comp2_vsn">1.00</p>
-                      <p id="pp2_comp2_vtn">708.55</p>
-                      <p id="pp2_comp2_pf">808.00</p>
-                      <p id="pp2_comp2_kw">0</p>
-                      <p id="pp2_comp2_kva">0</p>
-                      <p id="pp2_comp2_thdi">0</p>
-                      <p id="pp2_comp2_thdv">0</p>
-                      <p id="pp2_comp2_kwh">0</p>
+                      <p id="comp2_aavg">40</p>
+                      <p id="comp2_vrn">20200.00</p>
+                      <p id="comp2_vsn">1.00</p>
+                      <p id="comp2_vtn">708.55</p>
+                      <p id="comp2_pf">808.00</p>
+                      <p id="comp2_kw">0</p>
+                      <p id="comp2_kva">0</p>
+                      <p id="comp2_thdi">0</p>
+                      <p id="comp2_thdv">0</p>
+                      <p id="comp2_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -688,24 +688,24 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp2_comp3_title" data-id="3">
+                  <div class="text-center title-parameter" id="comp3_title" data-id="3">
                     Compressor 3
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_comp3_aavg">40</p>
-                      <p id="pp2_comp3_vrn">20200.00</p>
-                      <p id="pp2_comp3_vsn">1.00</p>
-                      <p id="pp2_comp3_vtn">708.55</p>
-                      <p id="pp2_comp3_pf">808.00</p>
-                      <p id="pp2_comp3_kw">0</p>
-                      <p id="pp2_comp3_kva">0</p>
-                      <p id="pp2_comp3_thdi">0</p>
-                      <p id="pp2_comp3_thdv">0</p>
-                      <p id="pp2_comp3_kwh">0</p>
+                      <p id="comp3_aavg">40</p>
+                      <p id="comp3_vrn">20200.00</p>
+                      <p id="comp3_vsn">1.00</p>
+                      <p id="comp3_vtn">708.55</p>
+                      <p id="comp3_pf">808.00</p>
+                      <p id="comp3_kw">0</p>
+                      <p id="comp3_kva">0</p>
+                      <p id="comp3_thdi">0</p>
+                      <p id="comp3_thdv">0</p>
+                      <p id="comp3_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -724,24 +724,24 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp2_comp4_title" data-id="4">
+                  <div class="text-center title-parameter" id="comp4_title" data-id="4">
                     Compressor 4
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_comp4_aavg">40</p>
-                      <p id="pp2_comp4_vrn">20200.00</p>
-                      <p id="pp2_comp4_vsn">1.00</p>
-                      <p id="pp2_comp4_vtn">708.55</p>
-                      <p id="pp2_comp4_pf">808.00</p>
-                      <p id="pp2_comp4_kw">0</p>
-                      <p id="pp2_comp4_kva">0</p>
-                      <p id="pp2_comp4_thdi">0</p>
-                      <p id="pp2_comp4_thdv">0</p>
-                      <p id="pp2_comp4_kwh">0</p>
+                      <p id="comp4_aavg">40</p>
+                      <p id="comp4_vrn">20200.00</p>
+                      <p id="comp4_vsn">1.00</p>
+                      <p id="comp4_vtn">708.55</p>
+                      <p id="comp4_pf">808.00</p>
+                      <p id="comp4_kw">0</p>
+                      <p id="comp4_kva">0</p>
+                      <p id="comp4_thdi">0</p>
+                      <p id="comp4_thdv">0</p>
+                      <p id="comp4_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -777,7 +777,7 @@
                       <p id="pp2_ct_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -813,7 +813,7 @@
                       <p id="pp2_cap_1_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -928,7 +928,7 @@
                       <p id="pp1_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -984,24 +984,24 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp1_comp5_title" data-id="1">
+                  <div class="text-center title-parameter" id="comp5_title" data-id="1">
                     Compressor 5
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_comp5_aavg">40</p>
-                      <p id="pp1_comp5_vrn">20200.00</p>
-                      <p id="pp1_comp5_vsn">1.00</p>
-                      <p id="pp1_comp5_vtn">708.55</p>
-                      <p id="pp1_comp5_pf">808.00</p>
-                      <p id="pp1_comp5_kw">0</p>
-                      <p id="pp1_comp5_kva">0</p>
-                      <p id="pp1_comp5_thdi">0</p>
-                      <p id="pp1_comp5_thdv">0</p>
-                      <p id="pp1_comp5_kwh">0</p>
+                      <p id="comp5_aavg">40</p>
+                      <p id="comp5_vrn">20200.00</p>
+                      <p id="comp5_vsn">1.00</p>
+                      <p id="comp5_vtn">708.55</p>
+                      <p id="comp5_pf">808.00</p>
+                      <p id="comp5_kw">0</p>
+                      <p id="comp5_kva">0</p>
+                      <p id="comp5_thdi">0</p>
+                      <p id="comp5_thdv">0</p>
+                      <p id="comp5_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -1020,24 +1020,24 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp1_comp6_title" data-id="2">
+                  <div class="text-center title-parameter" id="comp6_title" data-id="2">
                     Compressor 6
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_comp6_aavg">40</p>
-                      <p id="pp1_comp6_vrn">20200.00</p>
-                      <p id="pp1_comp6_vsn">1.00</p>
-                      <p id="pp1_comp6_vtn">708.55</p>
-                      <p id="pp1_comp6_pf">808.00</p>
-                      <p id="pp1_comp6_kw">0</p>
-                      <p id="pp1_comp6_kva">0</p>
-                      <p id="pp1_comp6_thdi">0</p>
-                      <p id="pp1_comp6_thdv">0</p>
-                      <p id="pp1_comp6_kwh">0</p>
+                      <p id="comp6_aavg">40</p>
+                      <p id="comp6_vrn">20200.00</p>
+                      <p id="comp6_vsn">1.00</p>
+                      <p id="comp6_vtn">708.55</p>
+                      <p id="comp6_pf">808.00</p>
+                      <p id="comp6_kw">0</p>
+                      <p id="comp6_kva">0</p>
+                      <p id="comp6_thdi">0</p>
+                      <p id="comp6_thdv">0</p>
+                      <p id="comp6_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -1056,24 +1056,24 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp1_comp7_title" data-id="3">
+                  <div class="text-center title-parameter" id="comp7_title" data-id="3">
                     Compressor 7
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_comp7_aavg">40</p>
-                      <p id="pp1_comp7_vrn">20200.00</p>
-                      <p id="pp1_comp7_vsn">1.00</p>
-                      <p id="pp1_comp7_vtn">708.55</p>
-                      <p id="pp1_comp7_pf">808.00</p>
-                      <p id="pp1_comp7_kw">0</p>
-                      <p id="pp1_comp7_kva">0</p>
-                      <p id="pp1_comp7_thdi">0</p>
-                      <p id="pp1_comp7_thdv">0</p>
-                      <p id="pp1_comp7_kwh">0</p>
+                      <p id="comp7_aavg">40</p>
+                      <p id="comp7_vrn">20200.00</p>
+                      <p id="comp7_vsn">1.00</p>
+                      <p id="comp7_vtn">708.55</p>
+                      <p id="comp7_pf">808.00</p>
+                      <p id="comp7_kw">0</p>
+                      <p id="comp7_kva">0</p>
+                      <p id="comp7_thdi">0</p>
+                      <p id="comp7_thdv">0</p>
+                      <p id="comp7_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -1092,24 +1092,24 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp1_comp8_title" data-id="4">
+                  <div class="text-center title-parameter" id="comp8_title" data-id="4">
                     Compressor 8
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_comp8_aavg">40</p>
-                      <p id="pp1_comp8_vrn">20200.00</p>
-                      <p id="pp1_comp8_vsn">1.00</p>
-                      <p id="pp1_comp8_vtn">708.55</p>
-                      <p id="pp1_comp8_pf">808.00</p>
-                      <p id="pp1_comp8_kw">0</p>
-                      <p id="pp1_comp8_kva">0</p>
-                      <p id="pp1_comp8_thdi">0</p>
-                      <p id="pp1_comp8_thdv">0</p>
-                      <p id="pp1_comp8_kwh">0</p>
+                      <p id="comp8_aavg">40</p>
+                      <p id="comp8_vrn">20200.00</p>
+                      <p id="comp8_vsn">1.00</p>
+                      <p id="comp8_vtn">708.55</p>
+                      <p id="comp8_pf">808.00</p>
+                      <p id="comp8_kw">0</p>
+                      <p id="comp8_kva">0</p>
+                      <p id="comp8_thdi">0</p>
+                      <p id="comp8_thdv">0</p>
+                      <p id="comp8_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -1145,7 +1145,7 @@
                       <p id="pp1_cap_2_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -1266,7 +1266,7 @@
                       <p id="sdp_kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -1307,7 +1307,7 @@
                       <p id="sdp-comp1-kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -1341,7 +1341,7 @@
                       <p id="sdp-comp2-kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -1375,7 +1375,7 @@
                       <p id="sdp-comp3-kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>
@@ -1411,7 +1411,7 @@
                       <p id="sdp-comp4-kwh">0</p>
                     </div>
                     <div class="satuan">
-                      <p>A<sub>agv</sub></p>
+                      <p>A<sub>avg</sub></p>
                       <p>V<sub>R-N</sub></p>
                       <p>V<sub>S-N</sub></p>
                       <p>V<sub>T-N</sub></p>

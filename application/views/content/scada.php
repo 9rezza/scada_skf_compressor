@@ -41,7 +41,7 @@
       outline: 5px solid #4F7AC7;
       text-align: center;
       vertical-align: middle;
-      font-size: 42px;
+      font-size: 26px;
       letter-spacing: -1px;
       transform: rotateX(26deg) rotateY(18deg) rotateZ(0deg);
     }
@@ -195,25 +195,25 @@
       <?php } ?>
       <div class="pm" id="pp1" data-target="pp1_detail">
       </div>
-      <div class="pm" id="pp1_comp5" data-target="pp1_comp5_detail">
+      <div class="pm" id="comp5" data-target="comp5_detail">5
       </div>
-      <div class="pm" id="pp1_comp6" data-target="pp1_comp6_detail">
+      <div class="pm" id="comp6" data-target="comp6_detail">6
       </div>
-      <div class="pm" id="pp1_comp7" data-target="pp1_comp7_detail">
+      <div class="pm" id="comp7" data-target="comp7_detail">7
       </div>
-      <div class="pm" id="pp1_comp8" data-target="pp1_comp8_detail">
+      <div class="pm" id="comp8" data-target="comp8_detail">8
       </div>
       <div class="pm" id="pp2" data-target="pp2_detail">
       </div>
-      <div class="pm" id="pp2_comp1" data-target="pp2_comp1_detail">
+      <div class="pm" id="comp1" data-target="comp1_detail">1
       </div>
-      <div class="pm" id="pp2_comp2" data-target="pp2_comp2_detail">
+      <div class="pm" id="comp2" data-target="comp2_detail">2
       </div>
-      <div class="pm" id="pp2_comp3" data-target="pp2_comp3_detail">
+      <div class="pm" id="comp3" data-target="comp3_detail">3
       </div>
-      <div class="pm" id="pp2_comp4" data-target="pp2_comp4_detail">
+      <div class="pm" id="comp4" data-target="comp4_detail">4
       </div>
-      <div class="pm" id="pp2_ct" data-target="pp2_ct_detail">
+      <div class="pm" id="ct" data-target="ct_detail">
       </div>
       <div class="pm" id="sdp" data-target="sdp_detail">
       </div>
@@ -295,23 +295,23 @@
           </div>
         </div>
       </div>
-      <div class="pm_detail" id="pp1_comp5_detail" style="display: none;">
+      <div class="pm_detail" id="comp5_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="pp1_comp5_title" data-id="1">
+          <div class="text-center title-parameter" id="comp5_title" data-id="1">
             PP1 Compressor 5
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp1_comp5_aavg">40</p>
-              <p id="pp1_comp5_vrn">20200.00</p>
-              <p id="pp1_comp5_vsn">1.00</p>
-              <p id="pp1_comp5_vtn">708.55</p>
-              <p id="pp1_comp5_pf">808.00</p>
-              <p id="pp1_comp5_kw">0</p>
-              <p id="pp1_comp5_kva">0</p>
-              <p id="pp1_comp5_thdi">0</p>
-              <p id="pp1_comp5_thdv">0</p>
-              <p id="pp1_comp5_kwh">0</p>
+              <p id="comp5_aavg">40</p>
+              <p id="comp5_vrn">20200.00</p>
+              <p id="comp5_vsn">1.00</p>
+              <p id="comp5_vtn">708.55</p>
+              <p id="comp5_pf">808.00</p>
+              <p id="comp5_kw">0</p>
+              <p id="comp5_kva">0</p>
+              <p id="comp5_thdi">0</p>
+              <p id="comp5_thdv">0</p>
+              <p id="comp5_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -328,23 +328,23 @@
           </div>
         </div>
       </div>
-      <div class="pm_detail" id="pp1_comp6_detail" style="display: none;">
+      <div class="pm_detail" id="comp6_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="pp1_comp6_title" data-id="1">
+          <div class="text-center title-parameter" id="comp6_title" data-id="1">
             PP1 Compressor 6
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp1_comp6_aavg">40</p>
-              <p id="pp1_comp6_vrn">20200.00</p>
-              <p id="pp1_comp6_vsn">1.00</p>
-              <p id="pp1_comp6_vtn">708.55</p>
-              <p id="pp1_comp6_pf">808.00</p>
-              <p id="pp1_comp6_kw">0</p>
-              <p id="pp1_comp6_kva">0</p>
-              <p id="pp1_comp6_thdi">0</p>
-              <p id="pp1_comp6_thdv">0</p>
-              <p id="pp1_comp6_kwh">0</p>
+              <p id="comp6_aavg">40</p>
+              <p id="comp6_vrn">20200.00</p>
+              <p id="comp6_vsn">1.00</p>
+              <p id="comp6_vtn">708.55</p>
+              <p id="comp6_pf">808.00</p>
+              <p id="comp6_kw">0</p>
+              <p id="comp6_kva">0</p>
+              <p id="comp6_thdi">0</p>
+              <p id="comp6_thdv">0</p>
+              <p id="comp6_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -361,23 +361,23 @@
           </div>
         </div>
       </div>
-      <div class="pm_detail" id="pp1_comp7_detail" style="display: none;">
+      <div class="pm_detail" id="comp7_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="pp1_comp7_title" data-id="1">
+          <div class="text-center title-parameter" id="comp7_title" data-id="1">
             PP1 Compressor 7
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp1_comp7_aavg">40</p>
-              <p id="pp1_comp7_vrn">20200.00</p>
-              <p id="pp1_comp7_vsn">1.00</p>
-              <p id="pp1_comp7_vtn">708.55</p>
-              <p id="pp1_comp7_pf">808.00</p>
-              <p id="pp1_comp7_kw">0</p>
-              <p id="pp1_comp7_kva">0</p>
-              <p id="pp1_comp7_thdi">0</p>
-              <p id="pp1_comp7_thdv">0</p>
-              <p id="pp1_comp7_kwh">0</p>
+              <p id="comp7_aavg">40</p>
+              <p id="comp7_vrn">20200.00</p>
+              <p id="comp7_vsn">1.00</p>
+              <p id="comp7_vtn">708.55</p>
+              <p id="comp7_pf">808.00</p>
+              <p id="comp7_kw">0</p>
+              <p id="comp7_kva">0</p>
+              <p id="comp7_thdi">0</p>
+              <p id="comp7_thdv">0</p>
+              <p id="comp7_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -394,23 +394,23 @@
           </div>
         </div>
       </div>
-      <div class="pm_detail" id="pp1_comp8_detail" style="display: none;">
+      <div class="pm_detail" id="comp8_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="pp1_comp8_title" data-id="1">
+          <div class="text-center title-parameter" id="comp8_title" data-id="1">
             PP1 Compressor 8
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp1_comp8_aavg">40</p>
-              <p id="pp1_comp8_vrn">20200.00</p>
-              <p id="pp1_comp8_vsn">1.00</p>
-              <p id="pp1_comp8_vtn">708.55</p>
-              <p id="pp1_comp8_pf">808.00</p>
-              <p id="pp1_comp8_kw">0</p>
-              <p id="pp1_comp8_kva">0</p>
-              <p id="pp1_comp8_thdi">0</p>
-              <p id="pp1_comp8_thdv">0</p>
-              <p id="pp1_comp8_kwh">0</p>
+              <p id="comp8_aavg">40</p>
+              <p id="comp8_vrn">20200.00</p>
+              <p id="comp8_vsn">1.00</p>
+              <p id="comp8_vtn">708.55</p>
+              <p id="comp8_pf">808.00</p>
+              <p id="comp8_kw">0</p>
+              <p id="comp8_kva">0</p>
+              <p id="comp8_thdi">0</p>
+              <p id="comp8_thdv">0</p>
+              <p id="comp8_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -460,23 +460,23 @@
           </div>
         </div>
       </div>
-      <div class="pm_detail" id="pp2_comp1_detail" style="display: none;">
+      <div class="pm_detail" id="comp1_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="pp2_comp1_title" data-id="1">
+          <div class="text-center title-parameter" id="comp1_title" data-id="1">
             PP2 Compressor 1
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp2_comp1_aavg">40</p>
-              <p id="pp2_comp1_vrn">20200.00</p>
-              <p id="pp2_comp1_vsn">1.00</p>
-              <p id="pp2_comp1_vtn">708.55</p>
-              <p id="pp2_comp1_pf">808.00</p>
-              <p id="pp2_comp1_kw">0</p>
-              <p id="pp2_comp1_kva">0</p>
-              <p id="pp2_comp1_thdi">0</p>
-              <p id="pp2_comp1_thdv">0</p>
-              <p id="pp2_comp1_kwh">0</p>
+              <p id="comp1_aavg">40</p>
+              <p id="comp1_vrn">20200.00</p>
+              <p id="comp1_vsn">1.00</p>
+              <p id="comp1_vtn">708.55</p>
+              <p id="comp1_pf">808.00</p>
+              <p id="comp1_kw">0</p>
+              <p id="comp1_kva">0</p>
+              <p id="comp1_thdi">0</p>
+              <p id="comp1_thdv">0</p>
+              <p id="comp1_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -493,23 +493,23 @@
           </div>
         </div>
       </div>
-      <div class="pm_detail" id="pp2_comp2_detail" style="display: none;">
+      <div class="pm_detail" id="comp2_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="pp2_comp2_title" data-id="1">
+          <div class="text-center title-parameter" id="comp2_title" data-id="1">
             PP2 Compressor 2
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp2_comp2_aavg">40</p>
-              <p id="pp2_comp2_vrn">20200.00</p>
-              <p id="pp2_comp2_vsn">1.00</p>
-              <p id="pp2_comp2_vtn">708.55</p>
-              <p id="pp2_comp2_pf">808.00</p>
-              <p id="pp2_comp2_kw">0</p>
-              <p id="pp2_comp2_kva">0</p>
-              <p id="pp2_comp2_thdi">0</p>
-              <p id="pp2_comp2_thdv">0</p>
-              <p id="pp2_comp2_kwh">0</p>
+              <p id="comp2_aavg">40</p>
+              <p id="comp2_vrn">20200.00</p>
+              <p id="comp2_vsn">1.00</p>
+              <p id="comp2_vtn">708.55</p>
+              <p id="comp2_pf">808.00</p>
+              <p id="comp2_kw">0</p>
+              <p id="comp2_kva">0</p>
+              <p id="comp2_thdi">0</p>
+              <p id="comp2_thdv">0</p>
+              <p id="comp2_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -526,23 +526,23 @@
           </div>
         </div>
       </div>
-      <div class="pm_detail" id="pp2_comp3_detail" style="display: none;">
+      <div class="pm_detail" id="comp3_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="pp2_comp3_title" data-id="1">
+          <div class="text-center title-parameter" id="comp3_title" data-id="1">
             PP2 Compressor 3
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp2_comp3_aavg">40</p>
-              <p id="pp2_comp3_vrn">20200.00</p>
-              <p id="pp2_comp3_vsn">1.00</p>
-              <p id="pp2_comp3_vtn">708.55</p>
-              <p id="pp2_comp3_pf">808.00</p>
-              <p id="pp2_comp3_kw">0</p>
-              <p id="pp2_comp3_kva">0</p>
-              <p id="pp2_comp3_thdi">0</p>
-              <p id="pp2_comp3_thdv">0</p>
-              <p id="pp2_comp3_kwh">0</p>
+              <p id="comp3_aavg">40</p>
+              <p id="comp3_vrn">20200.00</p>
+              <p id="comp3_vsn">1.00</p>
+              <p id="comp3_vtn">708.55</p>
+              <p id="comp3_pf">808.00</p>
+              <p id="comp3_kw">0</p>
+              <p id="comp3_kva">0</p>
+              <p id="comp3_thdi">0</p>
+              <p id="comp3_thdv">0</p>
+              <p id="comp3_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -559,23 +559,23 @@
           </div>
         </div>
       </div>
-      <div class="pm_detail" id="pp2_comp4_detail" style="display: none;">
+      <div class="pm_detail" id="comp4_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="pp2_comp4_title" data-id="1">
+          <div class="text-center title-parameter" id="comp4_title" data-id="1">
             PP2 Compressor 4
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp2_comp4_aavg">40</p>
-              <p id="pp2_comp4_vrn">20200.00</p>
-              <p id="pp2_comp4_vsn">1.00</p>
-              <p id="pp2_comp4_vtn">708.55</p>
-              <p id="pp2_comp4_pf">808.00</p>
-              <p id="pp2_comp4_kw">0</p>
-              <p id="pp2_comp4_kva">0</p>
-              <p id="pp2_comp4_thdi">0</p>
-              <p id="pp2_comp4_thdv">0</p>
-              <p id="pp2_comp4_kwh">0</p>
+              <p id="comp4_aavg">40</p>
+              <p id="comp4_vrn">20200.00</p>
+              <p id="comp4_vsn">1.00</p>
+              <p id="comp4_vtn">708.55</p>
+              <p id="comp4_pf">808.00</p>
+              <p id="comp4_kw">0</p>
+              <p id="comp4_kva">0</p>
+              <p id="comp4_thdi">0</p>
+              <p id="comp4_thdv">0</p>
+              <p id="comp4_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -592,23 +592,23 @@
           </div>
         </div>
       </div>
-      <div class="pm_detail" id="pp2_ct_detail" style="display: none;">
+      <div class="pm_detail" id="ct_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="pp2_comp5_title" data-id="1">
+          <div class="text-center title-parameter" id="comp5_title" data-id="1">
             Cooling Tower
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp2_comp5_aavg">40</p>
-              <p id="pp2_comp5_vrn">20200.00</p>
-              <p id="pp2_comp5_vsn">1.00</p>
-              <p id="pp2_comp5_vtn">708.55</p>
-              <p id="pp2_comp5_pf">808.00</p>
-              <p id="pp2_comp5_kw">0</p>
-              <p id="pp2_comp5_kva">0</p>
-              <p id="pp2_comp5_thdi">0</p>
-              <p id="pp2_comp5_thdv">0</p>
-              <p id="pp2_comp5_kwh">0</p>
+              <p id="comp5_aavg">40</p>
+              <p id="comp5_vrn">20200.00</p>
+              <p id="comp5_vsn">1.00</p>
+              <p id="comp5_vtn">708.55</p>
+              <p id="comp5_pf">808.00</p>
+              <p id="comp5_kw">0</p>
+              <p id="comp5_kva">0</p>
+              <p id="comp5_thdi">0</p>
+              <p id="comp5_thdv">0</p>
+              <p id="comp5_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -785,8 +785,8 @@
         $('#pp1_temp > .nilai').html(payload.pp1)
         $('#pp2_temp > .nilai').html(payload.pp2)
         $('#sdp_temp > .nilai').html(payload.sdp)
-        $('#cap1_temp > .nilai').html(payload.cap_bank_1)
-        $('#cap2_temp > .nilai').html(payload.cap_bank_2)
+        $('#cap1_temp > .nilai').html(payload.cap1)
+        $('#cap2_temp > .nilai').html(payload.cap2)
       }
     }
 
@@ -794,8 +794,8 @@
     temp["pp1"] = false
     temp["pp2"] = false
     temp["sdp"] = false
-    temp["cap_bank_1"] = false
-    temp["cap_bank_2"] = false
+    temp["cap1"] = false
+    temp["cap2"] = false
     wstemp_alarm()
 
     function wstemp_alarm() {
@@ -815,7 +815,7 @@
         var payload = $.parseJSON(event.data)[0]
         modul = Object.keys(payload)[0]
         temp[modul] = payload[modul] == 1
-        // console.log(temp['cap_bank_1'])
+        // console.log(temp['cap1'])
       }
     }
 
@@ -847,8 +847,8 @@
         pp1_alarm = payload.pp1 == true
         pp2_alarm = payload.pp2 == true
         sdp_alarm = payload.sdp == true
-        cap1_alarm = payload.cap_bank_1 == true
-        cap2_alarm = payload.cap_bank_2 == true
+        cap1_alarm = payload.cap1 == true
+        cap2_alarm = payload.cap2 == true
         evacuate = payload.evacuate == true
         gas_disc = payload.gas_disc == true
       }
@@ -920,7 +920,7 @@
       } else {
         $('#sdp_temp').css('background-color', 'transparent');
       }
-      if (temp['cap_bank_1']) {
+      if (temp['cap1']) {
         $('#cap1_temp').css('background-color', '#fc1e18');
         setTimeout(() => {
           $('#cap1_temp').css('background-color', '#b3b3b3');
@@ -928,7 +928,7 @@
       } else {
         $('#cap1_temp').css('background-color', 'transparent');
       }
-      if (temp['cap_bank_2']) {
+      if (temp['cap2']) {
         $('#cap2_temp').css('background-color', '#fc1e18');
         setTimeout(() => {
           $('#cap2_temp').css('background-color', '#b3b3b3');
