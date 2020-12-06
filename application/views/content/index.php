@@ -266,7 +266,7 @@
       .sdp-parent-parameter .sdp-core-parameter .content-core {
         margin-right: 4px;
         font-size: 17px;
-        line-height: 11px;
+        line-height: 9.5px;
         font-weight: bold;
       }
 
@@ -468,7 +468,7 @@
       }
     </style>
 
-    <div class="col-sm-7" style="padding: 5px; width: 55%">
+    <div class="col-sm-7" style="padding: 5px; width: 55%; float: left">
       <div class="area">
         <table class="table-main">
           <thead>
@@ -855,7 +855,7 @@
       </div>
     </div>
 
-    <div class="col-sm-5" style="padding: 5px 10px 5px 5px; width: 45%">
+    <div class="col-sm-5" style="padding: 5px 5px 5px 5px; width: 45%; float: left">
       <div class="area">
         <table class="table-main">
           <thead>

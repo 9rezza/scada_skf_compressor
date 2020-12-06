@@ -70,12 +70,16 @@ class Main extends CI_Controller
 		$from = $this->input->post('from');
 		$to = $this->input->post('to');
 		$modul = $this->input->post('modul');
-		$data = $this->main_model->get_data($from, $to, $modul)->result();
 		if ($modul == 'temp') {
+			$data = $this->main_model->get_data($from, $to, $modul)->result();
+			$file = $this->export_data_temp('Record', $data);
 		} else if ($modul == 'alarm') {
+			$data = $this->main_model->get_data_alarm($from, $to, $modul)->result();
+			$file = $this->export_data_alarm('Record', $data);
 		} else if ($modul == 'cap1') {
 		} else if ($modul == 'cap2') {
 		} else {
+			$data = $this->main_model->get_data($from, $to, $modul)->result();
 			$file = $this->export_data_pm('Record', $data);
 		}
 			// print_r($file);
@@ -116,6 +120,56 @@ class Main extends CI_Controller
 		// 	'file' => "data:application/vnd.ms-excel;base64,".base64_encode($xlsData)
 		// );
 		// return $response;
+		return $writer->save("php://output");
+	}
+
+	public function export_data_temp($name, $data)
+	{
+		$spreadsheet = new Spreadsheet();
+		$sheet = $spreadsheet->getActiveSheet();
+		$sheet->setCellValue('A1', 'TIMESTAMP');
+		$sheet->setCellValue('B1', 'PP1');
+		$sheet->setCellValue('C1', 'PP2');
+		$sheet->setCellValue('D1', 'SDP');
+		$sheet->setCellValue('E1', 'CAP. BANK 1');
+		$sheet->setCellValue('F1', 'CAP. BANK 2');
+
+		$i = 2;
+		foreach ($data as $dt) {
+			$sheet->setCellValue('A' . $i, $dt->datetime);
+			$sheet->setCellValue('B' . $i, $dt->pp1);
+			$sheet->setCellValue('C' . $i, $dt->pp2);
+			$sheet->setCellValue('D' . $i, $dt->sdp);
+			$sheet->setCellValue('E' . $i, $dt->cap1);
+			$sheet->setCellValue('F' . $i, $dt->cap2);
+			$i++;
+		}
+
+		$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, "Xlsx");
+		header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+		header('Content-Disposition: attachment; filename="' . $name . '.xlsx"');
+		return $writer->save("php://output");
+	}
+
+	public function export_data_alarm($name, $data)
+	{
+		$spreadsheet = new Spreadsheet();
+		$sheet = $spreadsheet->getActiveSheet();
+		$sheet->setCellValue('A1', 'Event');
+		$sheet->setCellValue('B1', 'Start');
+		$sheet->setCellValue('C1', 'End');
+
+		$i = 2;
+		foreach ($data as $dt) {
+			$sheet->setCellValue('A' . $i, 'Alarm '.$dt->modul);
+			$sheet->setCellValue('B' . $i, $dt->datetime_start);
+			$sheet->setCellValue('C' . $i, $dt->datetime_end);
+			$i++;
+		}
+
+		$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, "Xlsx");
+		header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+		header('Content-Disposition: attachment; filename="' . $name . '.xlsx"');
 		return $writer->save("php://output");
 	}
 

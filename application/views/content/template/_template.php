@@ -83,7 +83,7 @@
 
 
 <body class="hold-transition skin-black sidebar-collapse">
-  <div class="wrapper">
+  <div class="wrapper" style="overflow-y: hidden">
 
     <style>
       .menu-center {
@@ -276,5 +276,26 @@
   <script src="<?= $url ?>vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
 
 </body>
+<script>
+  var oldWidth = $(window).width()
+  $(document).ready(function() {
+    if ($(window).width() < 1920) {
+      scale = ($(window).width()) / 1920
+      $('.wrapper').css('transform', 'scale(' + scale + ')')
+      $('.wrapper').css('transform-origin', '0% 0%')
+    }
+    $(window).resize(function() {
+      newWidth = $(window).width()
+      if (newWidth < 1900) {
+        scale = ($(window).width()) / 1920
+        $('.wrapper').css('transform', 'scale(' + scale + ')')
+        $('.wrapper').css('transform-origin', '0% 0%')
+      } else {
+        $('.wrapper').css('transform', 'scale(1)')
+        $('.hmi').css('transform-origin', '0% 0%')
+      }
+    })
+  })
+</script>
 
 </html>

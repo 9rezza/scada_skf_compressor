@@ -13,6 +13,15 @@ class Main_model extends CI_Model
 		return $this->db->get();
 	}
 
+	public function get_data_alarm($from, $to, $modul)
+	{
+		$this->db->select('*');
+		$this->db->from($modul);
+		$this->db->where('datetime_start >=', "'" . $from . ' 00:00:00' . "'", false);
+		$this->db->where('datetime_start <=', "'" . $to . ' 23:59:59' . "'", false);
+		return $this->db->get();
+	}
+
 	public function get_symbol()
 	{
 		$this->db->select('*');
