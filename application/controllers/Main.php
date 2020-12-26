@@ -87,6 +87,7 @@ class Main extends CI_Controller
 
 	public function export_data_pm($name, $data)
 	{
+		ini_set('memory_limit', '-1');
 		$spreadsheet = new Spreadsheet();
 		$sheet = $spreadsheet->getActiveSheet();
 		$sheet->setCellValue('A1', 'TIMESTAMP');
