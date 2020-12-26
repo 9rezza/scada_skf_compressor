@@ -1475,7 +1475,7 @@
     wspm()
 
     function wspm() {
-      _wspm = new WebSocket("ws://localhost:1880/ws/pm")
+      _wspm = new WebSocket("ws://<?=NODERED?>/ws/pm")
       _wspm.onerror = function(error) {
         console.log('Error detected: ' + error)
       }

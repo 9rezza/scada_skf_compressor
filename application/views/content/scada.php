@@ -735,7 +735,7 @@
     wspm()
 
     function wspm() {
-      _wspm = new WebSocket("ws://localhost:1880/ws/pm")
+      _wspm = new WebSocket("ws://<?=NODERED?>/ws/pm")
       _wspm.onerror = function(error) {
         console.log('Error detected: ' + error)
       }
@@ -767,7 +767,7 @@
     wstemp()
 
     function wstemp() {
-      _wstemp = new WebSocket("ws://localhost:1880/ws/temp")
+      _wstemp = new WebSocket("ws://<?=NODERED?>/ws/temp")
       _wstemp.onerror = function(error) {
         console.log('Error detected: ' + error)
       }
@@ -799,7 +799,7 @@
     wstemp_alarm()
 
     function wstemp_alarm() {
-      _wstemp_alarm = new WebSocket("ws://localhost:1880/ws/temp_alarm")
+      _wstemp_alarm = new WebSocket("ws://<?=NODERED?>/ws/temp_alarm")
       _wstemp_alarm.onerror = function(error) {
         console.log('Error detected: ' + error)
       }
@@ -829,7 +829,7 @@
     wsfire_alarm()
 
     function wsfire_alarm() {
-      _wsfire_alarm = new WebSocket("ws://localhost:1880/ws/fire_alarm")
+      _wsfire_alarm = new WebSocket("ws://<?=NODERED?>/ws/fire_alarm")
       _wsfire_alarm.onerror = function(error) {
         console.log('Error detected: ' + error)
       }
