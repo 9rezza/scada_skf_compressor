@@ -47,7 +47,7 @@
       }
     </style>
 
-    <div class="col-sm-12" style="padding: 5px">
+    <div class="col-xs-12" style="padding: 5px">
       <div class="container-fluid">
         <h1>Export Data</h1>
 
