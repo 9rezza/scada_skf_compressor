@@ -45,13 +45,19 @@
         font-style: normal;
         /* color: white; */
       }
+
+      .form-inline .form-control {
+        display: inline-block !important;
+        width: auto !important;
+        vertical-align: middle !important;
+      }
     </style>
 
     <div class="col-xs-12" style="padding: 5px">
       <div class="container-fluid">
         <h1>Export Data</h1>
 
-        <form class="form-inline" action="<?=base_url()?>export_data_download" method="post">
+        <form class="form-inline" action="<?= base_url() ?>export_data_download" method="post">
           <label for="modul">Data:</label>
           <select class="form-control" id="modul" name="modul">
             <option value="pp1">COMP. PP1</option>
@@ -86,9 +92,9 @@
 </div>
 
 
-<script src="<?=$url?>vendor/moment-js/moment.js"></script>
-<script src="<?=$url?>vendor/moment-js/locale/id.js"></script>
-<script src="<?=$url?>vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+<script src="<?= $url ?>vendor/moment-js/moment.js"></script>
+<script src="<?= $url ?>vendor/moment-js/locale/id.js"></script>
+<script src="<?= $url ?>vendor/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
 <script>
   $('#from').datetimepicker({
     locale: 'id',
