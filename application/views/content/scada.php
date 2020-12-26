@@ -269,16 +269,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp1_aavg">40</p>
-              <p id="pp1_vrn">20200.00</p>
-              <p id="pp1_vsn">1.00</p>
-              <p id="pp1_vtn">708.55</p>
-              <p id="pp1_pf">808.00</p>
-              <p id="pp1_kw">0</p>
-              <p id="pp1_kva">0</p>
-              <p id="pp1_thdi">0</p>
-              <p id="pp1_thdv">0</p>
-              <p id="pp1_kwh">0</p>
+              <p id="pp1_aavg">##.#</p>
+              <p id="pp1_vrn">###.#</p>
+              <p id="pp1_vsn">###.#</p>
+              <p id="pp1_vtn">###.#</p>
+              <p id="pp1_pf">#.##</p>
+              <p id="pp1_kw">####</p>
+              <p id="pp1_kva">####</p>
+              <p id="pp1_thdi">#.##</p>
+              <p id="pp1_thdv">#.##</p>
+              <p id="pp1_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -302,16 +302,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="comp5_aavg">40</p>
-              <p id="comp5_vrn">20200.00</p>
-              <p id="comp5_vsn">1.00</p>
-              <p id="comp5_vtn">708.55</p>
-              <p id="comp5_pf">808.00</p>
-              <p id="comp5_kw">0</p>
-              <p id="comp5_kva">0</p>
-              <p id="comp5_thdi">0</p>
-              <p id="comp5_thdv">0</p>
-              <p id="comp5_kwh">0</p>
+              <p id="comp5_aavg">##.#</p>
+              <p id="comp5_vrn">###.#</p>
+              <p id="comp5_vsn">###.#</p>
+              <p id="comp5_vtn">###.#</p>
+              <p id="comp5_pf">#.##</p>
+              <p id="comp5_kw">####</p>
+              <p id="comp5_kva">####</p>
+              <p id="comp5_thdi">#.##</p>
+              <p id="comp5_thdv">#.##</p>
+              <p id="comp5_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -335,16 +335,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="comp6_aavg">40</p>
-              <p id="comp6_vrn">20200.00</p>
-              <p id="comp6_vsn">1.00</p>
-              <p id="comp6_vtn">708.55</p>
-              <p id="comp6_pf">808.00</p>
-              <p id="comp6_kw">0</p>
-              <p id="comp6_kva">0</p>
-              <p id="comp6_thdi">0</p>
-              <p id="comp6_thdv">0</p>
-              <p id="comp6_kwh">0</p>
+              <p id="comp6_aavg">##.#</p>
+              <p id="comp6_vrn">###.#</p>
+              <p id="comp6_vsn">###.#</p>
+              <p id="comp6_vtn">###.#</p>
+              <p id="comp6_pf">#.##</p>
+              <p id="comp6_kw">####</p>
+              <p id="comp6_kva">####</p>
+              <p id="comp6_thdi">#.##</p>
+              <p id="comp6_thdv">#.##</p>
+              <p id="comp6_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -368,16 +368,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="comp7_aavg">40</p>
-              <p id="comp7_vrn">20200.00</p>
-              <p id="comp7_vsn">1.00</p>
-              <p id="comp7_vtn">708.55</p>
-              <p id="comp7_pf">808.00</p>
-              <p id="comp7_kw">0</p>
-              <p id="comp7_kva">0</p>
-              <p id="comp7_thdi">0</p>
-              <p id="comp7_thdv">0</p>
-              <p id="comp7_kwh">0</p>
+              <p id="comp7_aavg">##.#</p>
+              <p id="comp7_vrn">###.#</p>
+              <p id="comp7_vsn">###.#</p>
+              <p id="comp7_vtn">###.#</p>
+              <p id="comp7_pf">#.##</p>
+              <p id="comp7_kw">####</p>
+              <p id="comp7_kva">####</p>
+              <p id="comp7_thdi">#.##</p>
+              <p id="comp7_thdv">#.##</p>
+              <p id="comp7_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -401,16 +401,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="comp8_aavg">40</p>
-              <p id="comp8_vrn">20200.00</p>
-              <p id="comp8_vsn">1.00</p>
-              <p id="comp8_vtn">708.55</p>
-              <p id="comp8_pf">808.00</p>
-              <p id="comp8_kw">0</p>
-              <p id="comp8_kva">0</p>
-              <p id="comp8_thdi">0</p>
-              <p id="comp8_thdv">0</p>
-              <p id="comp8_kwh">0</p>
+              <p id="comp8_aavg">##.#</p>
+              <p id="comp8_vrn">###.#</p>
+              <p id="comp8_vsn">###.#</p>
+              <p id="comp8_vtn">###.#</p>
+              <p id="comp8_pf">#.##</p>
+              <p id="comp8_kw">####</p>
+              <p id="comp8_kva">####</p>
+              <p id="comp8_thdi">#.##</p>
+              <p id="comp8_thdv">#.##</p>
+              <p id="comp8_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -434,16 +434,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="pp2_aavg">40</p>
-              <p id="pp2_vrn">20200.00</p>
-              <p id="pp2_vsn">1.00</p>
-              <p id="pp2_vtn">708.55</p>
-              <p id="pp2_pf">808.00</p>
-              <p id="pp2_kw">0</p>
-              <p id="pp2_kva">0</p>
-              <p id="pp2_thdi">0</p>
-              <p id="pp2_thdv">0</p>
-              <p id="pp2_kwh">0</p>
+              <p id="pp2_aavg">##.#</p>
+              <p id="pp2_vrn">###.#</p>
+              <p id="pp2_vsn">###.#</p>
+              <p id="pp2_vtn">###.#</p>
+              <p id="pp2_pf">#.##</p>
+              <p id="pp2_kw">####</p>
+              <p id="pp2_kva">####</p>
+              <p id="pp2_thdi">#.##</p>
+              <p id="pp2_thdv">#.##</p>
+              <p id="pp2_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -467,16 +467,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="comp1_aavg">40</p>
-              <p id="comp1_vrn">20200.00</p>
-              <p id="comp1_vsn">1.00</p>
-              <p id="comp1_vtn">708.55</p>
-              <p id="comp1_pf">808.00</p>
-              <p id="comp1_kw">0</p>
-              <p id="comp1_kva">0</p>
-              <p id="comp1_thdi">0</p>
-              <p id="comp1_thdv">0</p>
-              <p id="comp1_kwh">0</p>
+              <p id="comp1_aavg">##.#</p>
+              <p id="comp1_vrn">###.#</p>
+              <p id="comp1_vsn">###.#</p>
+              <p id="comp1_vtn">###.#</p>
+              <p id="comp1_pf">#.##</p>
+              <p id="comp1_kw">####</p>
+              <p id="comp1_kva">####</p>
+              <p id="comp1_thdi">#.##</p>
+              <p id="comp1_thdv">#.##</p>
+              <p id="comp1_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -500,16 +500,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="comp2_aavg">40</p>
-              <p id="comp2_vrn">20200.00</p>
-              <p id="comp2_vsn">1.00</p>
-              <p id="comp2_vtn">708.55</p>
-              <p id="comp2_pf">808.00</p>
-              <p id="comp2_kw">0</p>
-              <p id="comp2_kva">0</p>
-              <p id="comp2_thdi">0</p>
-              <p id="comp2_thdv">0</p>
-              <p id="comp2_kwh">0</p>
+              <p id="comp2_aavg">##.#</p>
+              <p id="comp2_vrn">###.#</p>
+              <p id="comp2_vsn">###.#</p>
+              <p id="comp2_vtn">###.#</p>
+              <p id="comp2_pf">#.##</p>
+              <p id="comp2_kw">####</p>
+              <p id="comp2_kva">####</p>
+              <p id="comp2_thdi">#.##</p>
+              <p id="comp2_thdv">#.##</p>
+              <p id="comp2_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -533,16 +533,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="comp3_aavg">40</p>
-              <p id="comp3_vrn">20200.00</p>
-              <p id="comp3_vsn">1.00</p>
-              <p id="comp3_vtn">708.55</p>
-              <p id="comp3_pf">808.00</p>
-              <p id="comp3_kw">0</p>
-              <p id="comp3_kva">0</p>
-              <p id="comp3_thdi">0</p>
-              <p id="comp3_thdv">0</p>
-              <p id="comp3_kwh">0</p>
+              <p id="comp3_aavg">##.#</p>
+              <p id="comp3_vrn">###.#</p>
+              <p id="comp3_vsn">###.#</p>
+              <p id="comp3_vtn">###.#</p>
+              <p id="comp3_pf">#.##</p>
+              <p id="comp3_kw">####</p>
+              <p id="comp3_kva">####</p>
+              <p id="comp3_thdi">#.##</p>
+              <p id="comp3_thdv">#.##</p>
+              <p id="comp3_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -566,16 +566,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="comp4_aavg">40</p>
-              <p id="comp4_vrn">20200.00</p>
-              <p id="comp4_vsn">1.00</p>
-              <p id="comp4_vtn">708.55</p>
-              <p id="comp4_pf">808.00</p>
-              <p id="comp4_kw">0</p>
-              <p id="comp4_kva">0</p>
-              <p id="comp4_thdi">0</p>
-              <p id="comp4_thdv">0</p>
-              <p id="comp4_kwh">0</p>
+              <p id="comp4_aavg">##.#</p>
+              <p id="comp4_vrn">###.#</p>
+              <p id="comp4_vsn">###.#</p>
+              <p id="comp4_vtn">###.#</p>
+              <p id="comp4_pf">#.##</p>
+              <p id="comp4_kw">####</p>
+              <p id="comp4_kva">####</p>
+              <p id="comp4_thdi">#.##</p>
+              <p id="comp4_thdv">#.##</p>
+              <p id="comp4_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -599,16 +599,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="ct_aavg">40</p>
-              <p id="ct_vrn">20200.00</p>
-              <p id="ct_vsn">1.00</p>
-              <p id="ct_vtn">708.55</p>
-              <p id="ct_pf">808.00</p>
-              <p id="ct_kw">0</p>
-              <p id="ct_kva">0</p>
-              <p id="ct_thdi">0</p>
-              <p id="ct_thdv">0</p>
-              <p id="ct_kwh">0</p>
+              <p id="ct_aavg">##.#</p>
+              <p id="ct_vrn">###.#</p>
+              <p id="ct_vsn">###.#</p>
+              <p id="ct_vtn">###.#</p>
+              <p id="ct_pf">#.##</p>
+              <p id="ct_kw">####</p>
+              <p id="ct_kva">####</p>
+              <p id="ct_thdi">#.##</p>
+              <p id="ct_thdv">#.##</p>
+              <p id="ct_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -632,16 +632,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="sdp-aavg">40</p>
-              <p id="sdp-vrn">20200.00</p>
-              <p id="sdp-vsn">1.00</p>
-              <p id="sdp-vtn">708.55</p>
-              <p id="sdp-pf">808.00</p>
-              <p id="sdp-kw">0</p>
-              <p id="sdp-kva">0</p>
-              <p id="sdp-thdi">0</p>
-              <p id="sdp-thdv">0</p>
-              <p id="sdp-kwh">0</p>
+              <p id="sdp-aavg">##.#</p>
+              <p id="sdp-vrn">###.#</p>
+              <p id="sdp-vsn">###.#</p>
+              <p id="sdp-vtn">###.#</p>
+              <p id="sdp-pf">#.##</p>
+              <p id="sdp-kw">####</p>
+              <p id="sdp-kva">####</p>
+              <p id="sdp-thdi">#.##</p>
+              <p id="sdp-thdv">#.##</p>
+              <p id="sdp-kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -665,16 +665,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="cap1-aavg">40</p>
-              <p id="cap1-vrn">20200.00</p>
-              <p id="cap1-vsn">1.00</p>
-              <p id="cap1-vtn">708.55</p>
-              <p id="cap1-pf">808.00</p>
-              <p id="cap1-kw">0</p>
-              <p id="cap1-kva">0</p>
-              <p id="cap1-thdi">0</p>
-              <p id="cap1-thdv">0</p>
-              <p id="cap1-kwh">0</p>
+              <p id="cap1-aavg">##.#</p>
+              <p id="cap1-vrn">###.#</p>
+              <p id="cap1-vsn">###.#</p>
+              <p id="cap1-vtn">###.#</p>
+              <p id="cap1-pf">#.##</p>
+              <p id="cap1-kw">####</p>
+              <p id="cap1-kva">####</p>
+              <p id="cap1-thdi">#.##</p>
+              <p id="cap1-thdv">#.##</p>
+              <p id="cap1-kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -698,16 +698,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="cap2-aavg">40</p>
-              <p id="cap2-vrn">20200.00</p>
-              <p id="cap2-vsn">1.00</p>
-              <p id="cap2-vtn">708.55</p>
-              <p id="cap2-pf">808.00</p>
-              <p id="cap2-kw">0</p>
-              <p id="cap2-kva">0</p>
-              <p id="cap2-thdi">0</p>
-              <p id="cap2-thdv">0</p>
-              <p id="cap2-kwh">0</p>
+              <p id="cap2-aavg">##.#</p>
+              <p id="cap2-vrn">###.#</p>
+              <p id="cap2-vsn">###.#</p>
+              <p id="cap2-vtn">###.#</p>
+              <p id="cap2-pf">#.##</p>
+              <p id="cap2-kw">####</p>
+              <p id="cap2-kva">####</p>
+              <p id="cap2-thdi">#.##</p>
+              <p id="cap2-thdv">#.##</p>
+              <p id="cap2-kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
