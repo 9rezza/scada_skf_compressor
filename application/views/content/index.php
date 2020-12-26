@@ -760,21 +760,21 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp2_ct_title" data-id="4">
+                  <div class="text-center title-parameter" id="ct_title" data-id="4">
                     Cooling Tower
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_ct_aavg">40</p>
-                      <p id="pp2_ct_vrn">20200.00</p>
-                      <p id="pp2_ct_vsn">1.00</p>
-                      <p id="pp2_ct_vtn">708.55</p>
-                      <p id="pp2_ct_pf">808.00</p>
-                      <p id="pp2_ct_kw">0</p>
-                      <p id="pp2_ct_kva">0</p>
-                      <p id="pp2_ct_thdi">0</p>
-                      <p id="pp2_ct_thdv">0</p>
-                      <p id="pp2_ct_kwh">0</p>
+                      <p id="ct_aavg">40</p>
+                      <p id="ct_vrn">20200.00</p>
+                      <p id="ct_vsn">1.00</p>
+                      <p id="ct_vtn">708.55</p>
+                      <p id="ct_pf">808.00</p>
+                      <p id="ct_kw">0</p>
+                      <p id="ct_kva">0</p>
+                      <p id="ct_thdi">0</p>
+                      <p id="ct_thdv">0</p>
+                      <p id="ct_kwh">0</p>
                     </div>
                     <div class="satuan">
                       <p>A<sub>avg</sub></p>

@@ -594,21 +594,21 @@
       </div>
       <div class="pm_detail" id="ct_detail" style="display: none;">
         <div class="body-parameter">
-          <div class="text-center title-parameter" id="comp5_title" data-id="1">
+          <div class="text-center title-parameter" id="ct_title" data-id="1">
             Cooling Tower
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="comp5_aavg">40</p>
-              <p id="comp5_vrn">20200.00</p>
-              <p id="comp5_vsn">1.00</p>
-              <p id="comp5_vtn">708.55</p>
-              <p id="comp5_pf">808.00</p>
-              <p id="comp5_kw">0</p>
-              <p id="comp5_kva">0</p>
-              <p id="comp5_thdi">0</p>
-              <p id="comp5_thdv">0</p>
-              <p id="comp5_kwh">0</p>
+              <p id="ct_aavg">40</p>
+              <p id="ct_vrn">20200.00</p>
+              <p id="ct_vsn">1.00</p>
+              <p id="ct_vtn">708.55</p>
+              <p id="ct_pf">808.00</p>
+              <p id="ct_kw">0</p>
+              <p id="ct_kva">0</p>
+              <p id="ct_thdi">0</p>
+              <p id="ct_thdv">0</p>
+              <p id="ct_kwh">0</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>

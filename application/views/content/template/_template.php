@@ -36,6 +36,9 @@
   <script src="<?= $url ?>vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
 
   <style type="text/css">
+    html, body {
+      height: 0px !important;
+    }
     .no-padd-side {
       padding-left: 0;
       padding-right: 0;
@@ -292,10 +295,29 @@
         $('.wrapper').css('transform-origin', '0% 0%')
       } else {
         $('.wrapper').css('transform', 'scale(1)')
-        $('.hmi').css('transform-origin', '0% 0%')
+        $('.wrapper').css('transform-origin', '0% 0%')
       }
     })
   })
+  // var oldHeight = $(window).height()
+  // $(document).ready(function() {
+  //   if ($(window).height() < 1080) {
+  //     scale = ($(window).height()) / 1080
+  //     $('.wrapper').css('transform', 'scale(' + scale + ')')
+  //     $('.wrapper').css('transform-origin', '0% 0%')
+  //   }
+  //   $(window).resize(function() {
+  //     newHeight = $(window).height()
+  //     if (newHeight < 1080) {
+  //       scale = ($(window).height()) / 1080
+  //       $('.wrapper').css('transform', 'scale(' + scale + ')')
+  //       $('.wrapper').css('transform-origin', '0% 0%')
+  //     } else {
+  //       $('.wrapper').css('transform', 'scale(1)')
+  //       $('.wrapper').css('transform-origin', '0% 0%')
+  //     }
+  //   })
+  // })
 </script>
 
 </html>
