@@ -632,16 +632,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="sdp-aavg">##.#</p>
-              <p id="sdp-vrn">###.#</p>
-              <p id="sdp-vsn">###.#</p>
-              <p id="sdp-vtn">###.#</p>
-              <p id="sdp-pf">#.##</p>
-              <p id="sdp-kw">####</p>
-              <p id="sdp-kva">####</p>
-              <p id="sdp-thdi">#.##</p>
-              <p id="sdp-thdv">#.##</p>
-              <p id="sdp-kwh">####</p>
+              <p id="sdp_aavg">##.#</p>
+              <p id="sdp_vrn">###.#</p>
+              <p id="sdp_vsn">###.#</p>
+              <p id="sdp_vtn">###.#</p>
+              <p id="sdp_pf">#.##</p>
+              <p id="sdp_kw">####</p>
+              <p id="sdp_kva">####</p>
+              <p id="sdp_thdi">#.##</p>
+              <p id="sdp_thdv">#.##</p>
+              <p id="sdp_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -665,16 +665,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="cap1-aavg">##.#</p>
-              <p id="cap1-vrn">###.#</p>
-              <p id="cap1-vsn">###.#</p>
-              <p id="cap1-vtn">###.#</p>
-              <p id="cap1-pf">#.##</p>
-              <p id="cap1-kw">####</p>
-              <p id="cap1-kva">####</p>
-              <p id="cap1-thdi">#.##</p>
-              <p id="cap1-thdv">#.##</p>
-              <p id="cap1-kwh">####</p>
+              <p id="cap1_aavg">##.#</p>
+              <p id="cap1_vrn">###.#</p>
+              <p id="cap1_vsn">###.#</p>
+              <p id="cap1_vtn">###.#</p>
+              <p id="cap1_pf">#.##</p>
+              <p id="cap1_kw">####</p>
+              <p id="cap1_kva">####</p>
+              <p id="cap1_thdi">#.##</p>
+              <p id="cap1_thdv">#.##</p>
+              <p id="cap1_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>
@@ -698,16 +698,16 @@
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
-              <p id="cap2-aavg">##.#</p>
-              <p id="cap2-vrn">###.#</p>
-              <p id="cap2-vsn">###.#</p>
-              <p id="cap2-vtn">###.#</p>
-              <p id="cap2-pf">#.##</p>
-              <p id="cap2-kw">####</p>
-              <p id="cap2-kva">####</p>
-              <p id="cap2-thdi">#.##</p>
-              <p id="cap2-thdv">#.##</p>
-              <p id="cap2-kwh">####</p>
+              <p id="cap2_aavg">##.#</p>
+              <p id="cap2_vrn">###.#</p>
+              <p id="cap2_vsn">###.#</p>
+              <p id="cap2_vtn">###.#</p>
+              <p id="cap2_pf">#.##</p>
+              <p id="cap2_kw">####</p>
+              <p id="cap2_kva">####</p>
+              <p id="cap2_thdi">#.##</p>
+              <p id="cap2_thdv">#.##</p>
+              <p id="cap2_kwh">####</p>
             </div>
             <div class="satuan">
               <p>A<sub>agv</sub></p>

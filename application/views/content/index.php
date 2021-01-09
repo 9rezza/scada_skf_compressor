@@ -796,21 +796,21 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp2_cap_1_title" data-id="4">
+                  <div class="text-center title-parameter" id="cap1_title" data-id="4">
                     Cap. Bank 1
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp2_cap_1_aavg">##.#</p>
-                      <p id="pp2_cap_1_vrn">###.#</p>
-                      <p id="pp2_cap_1_vsn">###.#</p>
-                      <p id="pp2_cap_1_vtn">###.#</p>
-                      <p id="pp2_cap_1_pf">#.##</p>
-                      <p id="pp2_cap_1_kw">####</p>
-                      <p id="pp2_cap_1_kva">####</p>
-                      <p id="pp2_cap_1_thdi">#.##</p>
-                      <p id="pp2_cap_1_thdv">#.##</p>
-                      <p id="pp2_cap_1_kwh">####</p>
+                      <p id="cap1_aavg">##.#</p>
+                      <p id="cap1_vrn">###.#</p>
+                      <p id="cap1_vsn">###.#</p>
+                      <p id="cap1_vtn">###.#</p>
+                      <p id="cap1_pf">#.##</p>
+                      <p id="cap1_kw">####</p>
+                      <p id="cap1_kva">####</p>
+                      <p id="cap1_thdi">#.##</p>
+                      <p id="cap1_thdv">#.##</p>
+                      <p id="cap1_kwh">####</p>
                     </div>
                     <div class="satuan">
                       <p>A<sub>avg</sub></p>
@@ -1128,21 +1128,21 @@
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
-                  <div class="text-center title-parameter" id="pp1_cap_2-title" data-id="4">
+                  <div class="text-center title-parameter" id="cap2-title" data-id="4">
                     Cap. Bank 2
                   </div>
                   <div class="content-parameter text-right main">
                     <div class="nilai">
-                      <p id="pp1_cap_2_aavg">##.#</p>
-                      <p id="pp1_cap_2_vrn">###.#</p>
-                      <p id="pp1_cap_2_vsn">###.#</p>
-                      <p id="pp1_cap_2_vtn">###.#</p>
-                      <p id="pp1_cap_2_pf">#.##</p>
-                      <p id="pp1_cap_2_kw">####</p>
-                      <p id="pp1_cap_2_kva">####</p>
-                      <p id="pp1_cap_2_thdi">#.##</p>
-                      <p id="pp1_cap_2_thdv">#.##</p>
-                      <p id="pp1_cap_2_kwh">####</p>
+                      <p id="cap2_aavg">##.#</p>
+                      <p id="cap2_vrn">###.#</p>
+                      <p id="cap2_vsn">###.#</p>
+                      <p id="cap2_vtn">###.#</p>
+                      <p id="cap2_pf">#.##</p>
+                      <p id="cap2_kw">####</p>
+                      <p id="cap2_kva">####</p>
+                      <p id="cap2_thdi">#.##</p>
+                      <p id="cap2_thdv">#.##</p>
+                      <p id="cap2_kwh">####</p>
                     </div>
                     <div class="satuan">
                       <p>A<sub>avg</sub></p>

@@ -54,7 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['chart'] = 'main/chart';
-$route['scada'] = 'main/scada';
+$route['1scada'] = 'main/scada';
 $route['export_data'] = 'main/export_data';
 $route['export_data_download'] = 'main/export_data_download';
 
