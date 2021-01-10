@@ -661,7 +661,7 @@
       <div class="pm_detail" id="cap1_detail" style="display: none;">
         <div class="body-parameter">
           <div class="text-center title-parameter" id="cap1_title" data-id="1">
-            Capasitor Bank 1
+            Capacitor Bank 1
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
@@ -694,7 +694,7 @@
       <div class="pm_detail" id="cap2_detail" style="display: none;">
         <div class="body-parameter">
           <div class="text-center title-parameter" id="cap2_title" data-id="1">
-            Capasitor Bank 2
+            Capacitor Bank 2
           </div>
           <div class="content-parameter text-right main">
             <div class="nilai">
