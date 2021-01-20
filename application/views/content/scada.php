@@ -186,6 +186,23 @@
       width: 90%;
     }
 
+    .modal-backdrop {
+      z-index: -1;
+    }
+
+    #modal-limit .modal-body label {
+      font-size: 24px;
+    }
+
+    #modal-limit .modal-body input {
+      font-size: 24px;
+      height: 40px;
+    }
+
+    #modal-limit .modal-body .col-lg-6 {
+      margin-top: 20px;
+    }
+
     <?= join('', $position) ?>
   </style>
   <div class="col-xs-12 col-md-12 parent-hmi">
@@ -237,27 +254,27 @@
       <div class="alarm-box" id="gas_disc">
         GAS DISCHARGE
       </div>
-      <div class="textbox" id="pp1_temp">
+      <div class="textbox temp_box" id="pp1_temp">
         <p class="nilai">0</p>
         <sup class="sup">o</sup>
         <p class="satuan">C</p>
       </div>
-      <div class="textbox" id="pp2_temp">
+      <div class="textbox temp_box" id="pp2_temp">
         <p class="nilai">0</p>
         <p class="satuan"></p>
         <sup class="sup">o</sup>
       </div>
-      <div class="textbox" id="sdp_temp">
+      <div class="textbox temp_box" id="sdp_temp">
         <p class="nilai">0</p>
         <p class="satuan"></p>
         <sup class="sup">o</sup>
       </div>
-      <div class="textbox" id="cap1_temp">
+      <div class="textbox temp_box" id="cap1_temp">
         <p class="nilai">0</p>
         <p class="satuan"></p>
         <sup class="sup">o</sup>
       </div>
-      <div class="textbox" id="cap2_temp">
+      <div class="textbox temp_box" id="cap2_temp">
         <p class="nilai">0</p>
         <p class="satuan"></p>
         <sup class="sup">o</sup>
@@ -728,14 +745,94 @@
   </div>
 
 </div>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
+  Launch
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-limit" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog" role="document" style="top: 50vh">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title">Set Alarm Temperatur</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="" id="form-limit" method="post">
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="pp1_temp_limit">PP1</label>
+              <input class="form-control" type="text" name="pp1_temp_limit" id="pp1_temp_limit">
+            </div>
+            <div class="col-lg-6">
+              <label for="pp2_temp_limit">PP2</label>
+              <input class="form-control" type="text" name="pp2_temp_limit" id="pp2_temp_limit">
+            </div>
+            <div class="col-lg-6">
+              <label for="sdp">SDP</label>
+              <input class="form-control" type="text" name="sdp_temp_limit" id="sdp_temp_limit">
+            </div>
+            <div class="col-lg-6">
+              <label for="cap1_temp_limit">Cap. Bank 1</label>
+              <input class="form-control" type="text" name="cap1_temp_limit" id="cap1_temp_limit">
+            </div>
+            <div class="col-lg-6">
+              <label for="cap2_temp_limit">Cap. Bank 2</label>
+              <input class="form-control" type="text" name="cap2_temp_limit" id="cap2_temp_limit">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="save-temp-limit">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script>
   $(document).ready(function() {
+    $('.temp_box').click(function (e) { 
+      e.preventDefault();
+      $.post("<?= base_url() ?>get_temp_limit", data = null,
+        function(data, textStatus, jqXHR) {
+          // console.log(data)
+          $('#pp1_temp_limit').val(Math.floor(data.pp1));
+          $('#pp2_temp_limit').val(Math.floor(data.pp2));
+          $('#sdp_temp_limit').val(Math.floor(data.sdp));
+          $('#cap1_temp_limit').val(Math.floor(data.cap1));
+          $('#cap2_temp_limit').val(Math.floor(data.cap2));
+        },
+        "JSON"
+      );
+      $('#modal-limit').modal('show');
+    });
+    $('#save-temp-limit').click(function (e) { 
+      e.preventDefault();
+      data = {};
+      data.pp1 = $('#pp1_temp_limit').val();
+      data.pp2 = $('#pp2_temp_limit').val();
+      data.sdp = $('#sdp_temp_limit').val();
+      data.cap1 = $('#cap1_temp_limit').val();
+      data.cap2 = $('#cap2_temp_limit').val();
+      $.post("<?= base_url() ?>save_temp_limit", data,
+        function(data, textStatus, jqXHR) {
+          console.log(data)
+        },
+        "JSON"
+      );
+      $('#modal-limit').modal('hide');
+    });
+    
     // ws
     wspm()
 
     function wspm() {
-      _wspm = new WebSocket("ws://<?=NODERED?>/ws/pm")
+      _wspm = new WebSocket("ws://<?= NODERED ?>/ws/pm")
       _wspm.onerror = function(error) {
         console.log('Error detected: ' + error)
       }
@@ -767,7 +864,7 @@
     wstemp()
 
     function wstemp() {
-      _wstemp = new WebSocket("ws://<?=NODERED?>/ws/temp")
+      _wstemp = new WebSocket("ws://<?= NODERED ?>/ws/temp")
       _wstemp.onerror = function(error) {
         console.log('Error detected: ' + error)
       }
@@ -799,7 +896,7 @@
     wstemp_alarm()
 
     function wstemp_alarm() {
-      _wstemp_alarm = new WebSocket("ws://<?=NODERED?>/ws/temp_alarm")
+      _wstemp_alarm = new WebSocket("ws://<?= NODERED ?>/ws/temp_alarm")
       _wstemp_alarm.onerror = function(error) {
         console.log('Error detected: ' + error)
       }
@@ -829,7 +926,7 @@
     wsfire_alarm()
 
     function wsfire_alarm() {
-      _wsfire_alarm = new WebSocket("ws://<?=NODERED?>/ws/fire_alarm")
+      _wsfire_alarm = new WebSocket("ws://<?= NODERED ?>/ws/fire_alarm")
       _wsfire_alarm.onerror = function(error) {
         console.log('Error detected: ' + error)
       }

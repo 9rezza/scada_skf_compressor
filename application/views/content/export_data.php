@@ -51,6 +51,20 @@
         width: auto !important;
         vertical-align: middle !important;
       }
+
+      .form-inline label {
+        font-size: 24px;
+      }
+
+      .form-inline input {
+        font-size: 24px;
+        height: 40px;
+      }
+
+      .form-inline select {
+        font-size: 20px;
+        height: 40px;
+      }
     </style>
 
     <div class="col-xs-12" style="padding: 5px">

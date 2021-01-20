@@ -4,6 +4,23 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Main_model extends CI_Model
 {
 
+	public function get($from, $select = '*', $where = null)
+	{
+		$this->db->select($select);
+		$this->db->from($from);
+		if($where){
+			$this->db->where($where);
+		}
+		return $this->db->get();
+	}
+
+	public function update($table, $set, $where)
+	{
+		$this->db->where($where);
+		$this->db->update($table, $set);
+		return $this->db->affected_rows();
+	}
+
 	public function get_data($from, $to, $modul)
 	{
 		$this->db->select('*');

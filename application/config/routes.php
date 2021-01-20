@@ -55,6 +55,8 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['chart'] = 'main/chart';
 $route['scada'] = 'main/scada';
+$route['get_temp_limit'] = 'main/get_temp_limit';
+$route['save_temp_limit'] = 'main/save_temp_limit';
 $route['export_data'] = 'main/export_data';
 $route['export_data_download'] = 'main/export_data_download';
 

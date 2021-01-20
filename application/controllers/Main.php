@@ -76,8 +76,8 @@ class Main extends CI_Controller
 		} else if ($modul == 'alarm') {
 			$data = $this->main_model->get_data_alarm($from, $to, $modul)->result();
 			$file = $this->export_data_alarm('Record', $data);
-		} else if ($modul == 'cap1') {
-		} else if ($modul == 'cap2') {
+		// } else if ($modul == 'cap1') {
+		// } else if ($modul == 'cap2') {
 		} else {
 			$data = $this->main_model->get_data($from, $to, $modul)->result();
 			$file = $this->export_data_pm('Record', $data);
@@ -172,6 +172,26 @@ class Main extends CI_Controller
 		header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
 		header('Content-Disposition: attachment; filename="' . $name . '.xlsx"');
 		return $writer->save("php://output");
+	}
+
+	public function get_temp_limit()
+	{
+		$result = $this->main_model->get('temp_limit', '*', ['id' => 1])->row();
+		echo json_encode($result);
+	}
+
+	public function save_temp_limit()
+	{
+		$param = $this->input->post();
+		$set = [
+			'pp1' => $param['pp1'],
+			'pp2' => $param['pp2'],
+			'sdp' => $param['sdp'],
+			'cap1' => $param['cap1'],
+			'cap2' => $param['cap2']
+		];
+		$result = $this->main_model->update('temp_limit', $set, ['id' => 1]);
+		echo json_encode($result);
 	}
 
 
