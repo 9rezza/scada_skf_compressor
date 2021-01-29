@@ -745,10 +745,6 @@
   </div>
 
 </div>
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-  Launch
-</button>
 
 <!-- Modal -->
 <div class="modal fade" id="modal-limit" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
@@ -796,7 +792,23 @@
 
 <script>
   $(document).ready(function() {
-    $('.temp_box').click(function (e) { 
+    // $('.parent-hmi').notify( {
+    //   message: "test",
+    // }, {
+    //   type: 'danger',
+    //   newest_on_top: true,
+    //   placement: {
+    //     from: "top",
+    //     align: "left"
+    //   },
+    //   delay: 0,
+    // })
+
+    var timeoutPm = 0;
+    var timeoutTemp = 0;
+    var timeoutFireAlarm = 0;
+
+    $('.temp_box').click(function(e) {
       e.preventDefault();
       $.post("<?= base_url() ?>get_temp_limit", data = null,
         function(data, textStatus, jqXHR) {
@@ -811,7 +823,7 @@
       );
       $('#modal-limit').modal('show');
     });
-    $('#save-temp-limit').click(function (e) { 
+    $('#save-temp-limit').click(function(e) {
       e.preventDefault();
       data = {};
       data.pp1 = $('#pp1_temp_limit').val();
@@ -827,7 +839,7 @@
       );
       $('#modal-limit').modal('hide');
     });
-    
+
     // ws
     wspm()
 
@@ -1050,6 +1062,40 @@
         $('#gas_disc').css('background-color', '#4F7AC7');
       }
     }, 1000);
+
+    setInterval(() => {
+      // timeoutPm = timeoutPm + 200
+      // timeoutTemp = timeoutTemp + 200
+      // timeoutFireAlarm = timeoutFireAlarm + 200
+      if (timeoutPm > 5000) {
+        notify("Power Meter Not Connected");
+      }
+      if (timeoutTemp > 5000) {
+        notify("Temperature Not Connected");
+      }
+      if (timeoutFireAlarm > 5000) {
+        notify("Fire Alarm Not Coneected");
+      }
+    }, 200);
+
+
+    function notify(notification) {
+      if (notification != "") {
+        var notif =
+          $.notify({
+            message: notification,
+          }, {
+            type: 'danger',
+            newest_on_top: true,
+            placement: {
+              from: "top",
+              align: "left"
+            },
+            delay: 0,
+          });
+        return notif;
+      }
+    }
 
 
     // event user

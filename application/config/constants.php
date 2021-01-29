@@ -85,5 +85,5 @@ defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automat
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 
-defined('NODERED')      OR define('NODERED', "192.168.111.201:1880"); // highest automatically-assigned error code
+defined('NODERED')      OR define('NODERED', "163.157.249.215:1880"); // highest automatically-assigned error code
 // defined('NODERED')      OR define('NODERED', "192.168.111.254:1880"); // highest automatically-assigned error code

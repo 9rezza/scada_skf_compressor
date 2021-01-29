@@ -1689,12 +1689,13 @@
 
   function notify(notification) {
     if (notification != "") {
-      var notif = $.notify({
-        message: notification,
-      }, {
-        type: 'danger',
-        newest_on_top: true,
-        placement: {
+      var notif = 
+      $.notify({
+          message: notification,
+        }, {
+          type: 'danger',
+          newest_on_top: true,
+          placement: {
           from: "top",
           align: "left"
         },
