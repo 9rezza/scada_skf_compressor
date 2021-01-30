@@ -17,6 +17,11 @@
         /* background-color: #e8fdff; */
       }
 
+      .bg-red {
+        background-color: #ff5357;
+        color: #fff;
+      }
+
       /* .main-header{
                     background-color: #e8fdff;
                     color: white;
@@ -1506,6 +1511,12 @@
         $('#' + payload.modul + '_' + 'thdi').html(payload.thdi)
         $('#' + payload.modul + '_' + 'thdv').html(payload.thdv)
         $('#' + payload.modul + '_' + 'kwh').html(payload.kwh)
+
+        if(payload.kwh <= 0){
+          $('#' + payload.modul + '_' + 'kwh').parent().parent().parent().addClass('bg-red')
+        } else {
+          $('#' + payload.modul + '_' + 'kwh').parent().parent().parent().removeClass('bg-red')
+        }
       }
     }
 

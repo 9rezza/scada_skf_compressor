@@ -36,9 +36,11 @@
   <script src="<?= $url ?>vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
 
   <style type="text/css">
-    html, body {
+    html,
+    body {
       height: 0px !important;
     }
+
     .no-padd-side {
       padding-left: 0;
       padding-right: 0;
@@ -164,9 +166,9 @@
                   <i class="fa fa-circle text-success circleEdit hidden" style="display:none">(Edit mode)</i>
                 </div>
                 <div class="col-xs-8 text-center" style="padding-top: 0px; color: #b3b3b3">
-                  <a class="btn btn-info btn-sm menu-center" href="<?= $url ?>">Single Line Diagram</a>
-                  <a class="btn btn-info btn-sm menu-center" href="<?= $url ?>scada">SCADA PP1, PP2, PROD. SDP </a>
-                  <a class="btn btn-info btn-sm menu-center" href="<?= $url ?>export_data">Export Data</a>
+                  <a class="btn btn-info btn-sm menu-center" href="<?= $url ?>" id="menu-1">Single Line Diagram</a>
+                  <a class="btn btn-info btn-sm menu-center" href="<?= $url ?>scada" id="menu-2">SCADA PP1, PP2, PROD. SDP </a>
+                  <a class="btn btn-info btn-sm menu-center" href="<?= $url ?>export_data" id="menu-3">Export Data</a>
                 </div>
                 <div class="col-xs-2 hidden">
                   <div class="box-tools pull-right">
@@ -265,13 +267,17 @@
   <!-- BlockUI -->
   <script src="<?= $url ?>vendor/blockui/jquery.blockUI.js"></script>
   <!-- jQuery Highchart
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
 
-<script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/export-data.js"></script> -->
+  <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script> -->
 
+  <audio id="buzzer" hidden>
+    <source src="<?= base_url() ?>assets/sounds/buzzer.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
   <script src="<?= $url ?>vendor/canvas-js/canvasjs.min.js"></script>
   <script src="<?= $url ?>vendor/moment-js/moment.js"></script>
@@ -280,8 +286,28 @@
 
 </body>
 <script>
+  Audio.prototype.play = (function(play) {
+    return function() {
+      var audio = this,
+        args = arguments,
+        promise = play.apply(audio, args);
+      if (promise !== undefined) {
+        promise.catch(_ => {
+          // Autoplay was prevented. This is optional, but add a button to start playing.
+          var el = document.createElement("button");
+          el.innerHTML = "Play";
+          el.addEventListener("click", function() {
+            play.apply(audio, args);
+          });
+          this.parentNode.insertBefore(el, this.nextSibling)
+        });
+      }
+    };
+  })(Audio.prototype.play);
+
   var oldWidth = $(window).width()
   $(document).ready(function() {
+    $(document).trigger('click')
     if ($(window).width() < 1920) {
       scale = ($(window).width()) / 1920
       $('.wrapper').css('transform', 'scale(' + scale + ')')
@@ -299,6 +325,90 @@
       }
     })
   })
+
+  temp = {}
+  temp["pp1"] = false
+  temp["pp2"] = false
+  temp["sdp"] = false
+  temp["cap1"] = false
+  temp["cap2"] = false
+  wstemp_alarm()
+
+  function wstemp_alarm() {
+    _wstemp_alarm = new WebSocket("ws://<?= NODERED ?>/ws/temp_alarm")
+    _wstemp_alarm.onerror = function(error) {
+      console.log('Error detected: ' + error)
+    }
+    _wstemp_alarm.onopen = function() {
+      console.log('_wstemp_alarm connect')
+    }
+    _wstemp_alarm.onclose = function() {
+      console.log('_wstemp_alarm disconnect')
+      wstemp_alarm()
+    }
+    _wstemp_alarm.onmessage = function(event) {
+      var indicatorParam = []
+      var payload = $.parseJSON(event.data)[0]
+      modul = Object.keys(payload)[0]
+      temp[modul] = payload[modul] == 1
+      // console.log(temp['cap1'])
+    }
+  }
+
+  pp1_alarm = false
+  pp2_alarm = false
+  sdp_alarm = false
+  cap1_alarm = false
+  cap2_alarm = false
+  evacuate = false
+  gas_disc = false
+  fire_alarm = false
+  wsfire_alarm()
+
+  function wsfire_alarm() {
+    _wsfire_alarm = new WebSocket("ws://<?= NODERED ?>/ws/fire_alarm")
+    _wsfire_alarm.onerror = function(error) {
+      console.log('Error detected: ' + error)
+    }
+    _wsfire_alarm.onopen = function() {
+      console.log('_wsfire_alarm connect')
+    }
+    _wsfire_alarm.onclose = function() {
+      console.log('_wsfire_alarm disconnect')
+      wsfire_alarm()
+    }
+    _wsfire_alarm.onmessage = function(event) {
+      var indicatorParam = []
+      var payload = $.parseJSON(event.data)
+      // console.log(payload)
+      fire_alarm = (payload.pp1 == true) && (payload.pp2 == true) && (payload.sdp == true) && (payload.cap1 == true) && (payload.cap2 == true) && (payload.evacuate == true) && (payload.gas_disc == true)
+    }
+  }
+
+  var audio = document.getElementById("buzzer");
+  audio.loop = true
+  // play()
+
+
+  setInterval(() => {
+    if(fire_alarm || temp["pp1"] || temp["pp2"] || temp["sdp"] || temp["cap1"] || temp["cap2"]){
+      audio.play();
+      $('#menu-2').addClass('bg-red')
+    } else {
+      audio.pause();
+      $('#menu-2').removeClass('bg-red')
+    }
+  }, 300);
+
+  var menu1 = true
+  var menu2 = true
+  var menu3 = true
+
+  function menu_alarm(id) {
+    $('#menu-' + id).addClass('bg-red')
+  }
+
+
   // var oldHeight = $(window).height()
   // $(document).ready(function() {
   //   if ($(window).height() < 1080) {

@@ -72,17 +72,17 @@ class Main extends CI_Controller
 		$modul = $this->input->post('modul');
 		if ($modul == 'temp') {
 			$data = $this->main_model->get_data($from, $to, $modul)->result();
-			$file = $this->export_data_temp('Record', $data);
+			$file = $this->export_data_temp('Record_' . strtoupper($modul) . '_' . $from . '_' . $to, $data);
 		} else if ($modul == 'alarm') {
 			$data = $this->main_model->get_data_alarm($from, $to, $modul)->result();
-			$file = $this->export_data_alarm('Record', $data);
-		// } else if ($modul == 'cap1') {
-		// } else if ($modul == 'cap2') {
+			$file = $this->export_data_alarm('Record_' . strtoupper($modul) . '_' . $from . '_' . $to, $data);
+			// } else if ($modul == 'cap1') {
+			// } else if ($modul == 'cap2') {
 		} else {
 			$data = $this->main_model->get_data($from, $to, $modul)->result();
-			$file = $this->export_data_pm('Record', $data);
+			$file = $this->export_data_pm('Record_' . strtoupper($modul) . '_' . $from . '_' . $to, $data);
 		}
-			// print_r($file);
+		// print_r($file);
 	}
 
 	public function export_data_pm($name, $data)
@@ -162,7 +162,7 @@ class Main extends CI_Controller
 
 		$i = 2;
 		foreach ($data as $dt) {
-			$sheet->setCellValue('A' . $i, 'Alarm '.$dt->modul);
+			$sheet->setCellValue('A' . $i, 'Alarm ' . $dt->modul);
 			$sheet->setCellValue('B' . $i, $dt->datetime_start);
 			$sheet->setCellValue('C' . $i, $dt->datetime_end);
 			$i++;

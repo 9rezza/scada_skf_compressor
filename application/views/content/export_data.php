@@ -92,9 +92,9 @@
             <option value="alarm">ALARM EVENT</option>
           </select>
           <label for="from" style="padding-left: 40px">Tanggal:</label>
-          <input type="text" class="form-control" id="from" name="from">
+          <input type="text" class="form-control" id="from" name="from" required>
           <label for="to">s/d</label>
-          <input type="text" class="form-control" id="to" name="to">
+          <input type="text" class="form-control" id="to" name="to" required>
 
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
