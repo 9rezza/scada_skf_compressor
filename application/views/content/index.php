@@ -1514,9 +1514,9 @@
 
         console.log(payload.modul, payload.kwh, payload.kwh <= 0)
         if(payload.kwh <= 0){
-          $('#' + payload.modul + '_' + 'kwh').parent().parent().parent().addClass('bg-red')
+          $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().addClass('bg-red')
         } else {
-          $('#' + payload.modul + '_' + 'kwh').parent().parent().parent().removeClass('bg-red')
+          $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().removeClass('bg-red')
         }
       }
     }

@@ -871,7 +871,7 @@
         $('#' + payload.modul + '_' + 'thdv').html(payload.thdv)
         $('#' + payload.modul + '_' + 'kwh').html(payload.kwh)
 
-        if(payload.kwh <= 0){
+        if(payload.aavg <= 0){
           $('#' + payload.modul).addClass('bg-red')
         } else {
           $('#' + payload.modul).removeClass('bg-red')
