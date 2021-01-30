@@ -726,7 +726,7 @@
                 </div>
               </td>
 
-              
+
               <td rowspan="3"></td>
               <td rowspan="3" class="parameter">
                 <div class="body-parameter">
@@ -1481,47 +1481,49 @@
 
 
 <script>
-    // ws
-    wspm()
+  // ws
+  wspm()
 
-    function wspm() {
-      _wspm = new WebSocket("ws://<?=NODERED?>/ws/pm")
-      _wspm.onerror = function(error) {
-        console.log('Error detected: ' + error)
-      }
-      _wspm.onopen = function() {
-        console.log('_wspm connect')
-      }
-      _wspm.onclose = function() {
-        console.log('_wspm disconnect')
-        wspm()
-      }
-      _wspm.onmessage = function(event) {
-        var indicatorParam = []
-        var payload = $.parseJSON(event.data)
-        // console.log(payload)
-        // console.log('#' + payload.modul + '_' + 'aavg')
-        $('#' + payload.modul + '_' + 'aavg').html(payload.aavg)
-        $('#' + payload.modul + '_' + 'vrn').html(payload.vrn)
-        $('#' + payload.modul + '_' + 'vsn').html(payload.vsn)
-        $('#' + payload.modul + '_' + 'vtn').html(payload.vtn)
-        $('#' + payload.modul + '_' + 'pf').html(payload.pf)
-        $('#' + payload.modul + '_' + 'kw').html(payload.kw)
-        $('#' + payload.modul + '_' + 'kva').html(payload.kva)
-        $('#' + payload.modul + '_' + 'thdi').html(payload.thdi)
-        $('#' + payload.modul + '_' + 'thdv').html(payload.thdv)
-        $('#' + payload.modul + '_' + 'kwh').html(payload.kwh)
+  function wspm() {
+    _wspm = new WebSocket("ws://<?= NODERED ?>/ws/pm")
+    _wspm.onerror = function(error) {
+      console.log('Error detected: ' + error)
+    }
+    _wspm.onopen = function() {
+      console.log('_wspm connect')
+    }
+    _wspm.onclose = function() {
+      console.log('_wspm disconnect')
+      wspm()
+    }
+    _wspm.onmessage = function(event) {
+      var indicatorParam = []
+      var payload = $.parseJSON(event.data)
+      // console.log(payload)
+      // console.log('#' + payload.modul + '_' + 'aavg')
+      $('#' + payload.modul + '_' + 'aavg').html(payload.aavg)
+      $('#' + payload.modul + '_' + 'vrn').html(payload.vrn)
+      $('#' + payload.modul + '_' + 'vsn').html(payload.vsn)
+      $('#' + payload.modul + '_' + 'vtn').html(payload.vtn)
+      $('#' + payload.modul + '_' + 'pf').html(payload.pf)
+      $('#' + payload.modul + '_' + 'kw').html(payload.kw)
+      $('#' + payload.modul + '_' + 'kva').html(payload.kva)
+      $('#' + payload.modul + '_' + 'thdi').html(payload.thdi)
+      $('#' + payload.modul + '_' + 'thdv').html(payload.thdv)
+      $('#' + payload.modul + '_' + 'kwh').html(payload.kwh)
 
-        console.log(payload.modul, payload.aavg, payload.aavg <= 0)
-        if(payload.aavg <= 0){
+      console.log(payload.modul, payload.aavg, payload.aavg <= 0)
+      if (payload.aavg) {
+        if (payload.aavg <= 0) {
           $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().addClass('bg-red')
         } else {
           $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().removeClass('bg-red')
         }
       }
     }
+  }
 
-    // circuit
+  // circuit
   initPP1(1);
   initPP2(1);
   initPP3(1);
@@ -1701,18 +1703,18 @@
 
   function notify(notification) {
     if (notification != "") {
-      var notif = 
-      $.notify({
+      var notif =
+        $.notify({
           message: notification,
         }, {
           type: 'danger',
           newest_on_top: true,
           placement: {
-          from: "top",
-          align: "left"
-        },
-        delay: 0,
-      });
+            from: "top",
+            align: "left"
+          },
+          delay: 0,
+        });
       return notif;
     }
   }
