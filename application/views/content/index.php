@@ -1512,6 +1512,7 @@
         $('#' + payload.modul + '_' + 'thdv').html(payload.thdv)
         $('#' + payload.modul + '_' + 'kwh').html(payload.kwh)
 
+        console.log(payload.modul, payload.kwh, payload.kwh <= 0)
         if(payload.kwh <= 0){
           $('#' + payload.modul + '_' + 'kwh').parent().parent().parent().addClass('bg-red')
         } else {
