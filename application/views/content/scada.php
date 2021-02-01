@@ -748,7 +748,7 @@
 
 <!-- Modal -->
 <div class="modal fade" id="modal-limit" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-  <div class="modal-dialog" role="document" style="top: 50%">
+  <div class="modal-dialog" role="document" style="top: 20%">
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title">Set Alarm Temperatur</h1>
