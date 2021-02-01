@@ -1512,12 +1512,22 @@
       $('#' + payload.modul + '_' + 'thdv').html(payload.thdv)
       $('#' + payload.modul + '_' + 'kwh').html(payload.kwh)
 
-      console.log(payload.modul, payload.aavg, payload.aavg <= 0)
-      if (payload.aavg) {
-        if (payload.aavg <= 0) {
-          $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().addClass('bg-red')
-        } else {
-          $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().removeClass('bg-red')
+      // console.log(payload.modul, payload.aavg, payload.aavg <= 0)
+      if(payload.modul == "pp1" || payload.modul == "pp2" || payload.modul == "sdp"){
+        if (payload.aavg) {
+          if (payload.aavg <= 0) {
+            $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().addClass('bg-red')
+          } else {
+            $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().removeClass('bg-red')
+          }
+        }
+      } else {
+        if (payload.aavg) {
+          if (payload.aavg <= 0) {
+            $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().parent().addClass('bg-red')
+          } else {
+            $('#' + payload.modul + '_' + 'aavg').parent().parent().parent().parent().removeClass('bg-red')
+          }
         }
       }
     }
